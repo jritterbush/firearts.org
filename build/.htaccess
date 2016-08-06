@@ -19,10 +19,12 @@ Redirect 301 /michael.html http://www.firearts.org/gallery/index.php?cat=11
 Redirect 301 /seth.html http://www.firearts.org/gallery.html
 Redirect 301 /dragon.html http://www.firearts.org/gallery.html
 Redirect 301 /keiko.html http://www.firearts.org/gallery.html
-Redirect 301 /index_old.html http://www.firearts.org/index.html
+Redirect 301 /index_old.html http://www.firearts.org/
 Redirect 301 /elio.html http://www.firearts.org/elisotelo.html
 Redirect 301 /classes.htm http://www.firearts.org/classes.html
 Redirect 301 /aboutsite.html http://www.firearts.org/aboutus.html
+Redirect 301 /FireArts_ClassSchedule.pdf http://www.firearts.org/classes.html
+Redirect 301 /registration.pdf http://www.firearts.org/FireArts_RegistrationForm.pdf
 
 Redirect 301 /workshops http://www.firearts.org/workshops.html
 
@@ -39,3 +41,8 @@ RedirectMatch 301 /how(.*) http://www.firearts.org/contactus.html
 
 RedirectMatch 301 /blog(.*) http://www.firearts.org/wordpress/
 RedirectMatch 301 /events/(.*) http://www.firearts.org/events.html
+RedirectMatch 307 /home(.*) http://www.firearts.org/
+
+# temp maintenance
+RedirectMatch 307 /gallery/(.*) http://www.firearts.org/maintenance.html
+RedirectMatch 307 /wordpress/(.*) http://www.firearts.org/maintenance.html
