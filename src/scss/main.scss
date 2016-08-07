@@ -1,0 +1,485 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import 'variables';
+@import 'header';
+@import 'nav';
+
+// **************General Page****************
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
+}
+
+body {
+	background-color:$black;
+	color: $gray-lightest;
+	font-family: $font-family-base; 
+    line-height: 1.45;
+}
+
+/* Typography */
+
+p {
+    strong { 
+        color: $white;
+        font-weight: 700;
+    }
+}
+
+/* **************Table Cell Properties*************** */
+
+.main {
+    width: 735px;
+}
+
+.pageindicator { // um...you mean h1
+	height: 39px;
+	width: 590px;
+	background-color: $primary;
+}
+
+.textbox {
+	width: 598px;
+	background-color: $black;
+	}
+
+.bottomleft {
+	width: 137px;
+	background-color: $secondary;
+	}
+
+.footer {
+	width: 598px;
+	background-color: $black;
+	color: $white;
+	text-align: center;
+	}
+
+/* *************Links************** */
+
+.current1 {
+	color:$secondary;
+	font-weight:bold;
+	margin-left:10px;
+	}
+
+.current2 {
+	color:$white;
+	text-decoration:underline overline;
+	margin-left:15px;
+	font-size: 12px;
+	}
+
+a:link {
+	color:$primary;
+	text-decoration:underline;
+	}
+
+a:visited {
+	color:$primary;
+	text-decoration:underline;
+	}
+
+a:active {
+	color:$primary;
+	text-decoration:underline;
+	}
+
+a:hover {
+	color:$link-hover;
+	text-decoration:underline;
+	}
+
+/* ****Navigation Links for the Coppermine Gallery**** */
+
+.gallery a:link {
+	color:$primary;
+	text-decoration:underline;
+	font-size:50%;
+	}
+
+.gallery a:visited {
+	color:$primary;
+	text-decoration:underline;
+	}
+
+.gallery a:active {
+	color:$primary;
+	text-decoration:underline;
+	}
+
+.gallery a:hover {
+	color:$link-hover;
+	text-decoration:underline;
+	}
+
+.class1 a:link {
+	margin-left:10px; 
+	color:$primary; 
+	text-decoration:none; 
+	font-weight:bold; 
+	text-align:right;
+	}
+
+.class1 a:visited {
+	margin-left:10px; 
+	color:$primary; 
+	text-decoration:none; 
+	font-weight:bold; 
+	text-align:right;
+	}
+
+.class1 a:active {
+	margin-left:10px; 
+	color:$primary; 
+	text-decoration:none; 
+	font-weight:bold; 
+	text-align:right;
+	}
+
+.class1 a:hover {
+	margin-left:10px; 
+	color:$secondary; 
+	font-weight:bold; 
+	text-align:right;
+	}
+
+.class2 a:link {
+	margin-left:15px; 
+	color:$white; 
+	text-decoration:none;
+	font-size: 13px;
+	}
+
+.class2 a:visited {
+	margin-left:15px; 
+	color:$white; 
+	text-decoration:none;
+	font-size: 13px;
+	}
+
+.class2 a:active {
+	margin-left:15px; 
+	color:$white; 
+	text-decoration:none;
+	font-size: 13px;
+	}
+
+.class2 a:hover {
+	margin-left:15px; 
+	color:$white; 
+	text-decoration:underline overline;
+	font-size: 13px;
+	}
+
+/* ********Fonts, Headers, and Footers********** */
+
+ul {
+	margin-left: 25px;
+	padding-left:25px;
+}
+
+.header1, h1 {
+	color:$white;
+	font-size:200%;
+	text-align:right;
+	font-weight:normal;
+	}
+
+.header2, h2 {
+	font-size: 150%;
+	color: $primary; 
+	/*font-variant: small-caps;	*/
+	font-weight:normal;
+	margin:25px 0 5px 25px;
+	}
+	
+h2.section-head {
+	margin-top:50px;
+	border-bottom:1px solid $primary;	
+}
+
+.header3, h3 {
+	font-size: 150%; 
+	color: $primary; 
+	/*font-variant: small-caps;*/
+	font-weight:normal;
+	margin:10px 0 5px 25px;
+}
+
+.header4, h4 {
+	font-size: 125%; 
+	color: $primary; 
+	/*font-variant: small-caps;	*/
+	font-weight:normal;
+	margin:10px 0 5px 25px;
+	}
+
+.description2 {
+	font-size: 125%;
+	margin-left: 25px;
+	}
+
+.firstletter {
+	font-size:300%;
+	width: .9em;
+	line-height: 75%;
+	color: $primary;
+	float: left;
+	}
+
+.firstletter3 {
+	font-size: 300%;
+	width: .75em;
+	line-height: 75%;
+	color: $primary;
+	float: left;
+	}
+
+.firstletter4 {
+	font-size: 300%;
+	width: .3em;
+	line-height: 75%;
+	color: $primary;
+	float: left;	
+	}
+
+.date {
+	font-size: 75%;
+	}
+
+.note {
+	font-size: 75%;
+	text-decoration: none;
+	}
+
+.tiny {
+	font-size: 75%;
+	}
+
+.underline {
+	text-decoration: underline;	
+	}
+
+.backtotop {
+	text-decoration: underline;
+	font-size: 80%;
+	}
+
+.formindent {
+	margin-left: 25px;	
+	}
+
+.requiredfields {
+	color: $primary;
+	font-style: italic;
+	font-weight: bold;
+	}
+
+.ital {
+	font-style: italic;	
+	}
+
+.emphasis {
+	font-style: italic;
+	color: $primary;
+	}
+
+/* ************Special Features*********** */
+
+.float1 {
+	color: $primary;
+	float: left;
+	width: 100px; 
+	height: 25px; 
+	margin: 0px 10px 10px 0px;
+	line-height: 18px; 
+	text-align: left; 
+	font-size: 22px;
+	}
+
+img.floatright {
+	float: right;
+	margin: 4px;
+	}
+
+img.floatleft {
+	float: left;
+	margin: 4px;
+	}
+
+/* COPPERMINE GaLLERY STYLE INFORMaTION: The following style classes apply to the Coppermine Gallery Page. To avoid overlap of styles, I have brought over the needed style code from the Coppermine theme and placed it here. */
+
+.admin_menu_thumb {
+	font-size: 10px;
+	border: 1px solid $gray-darker;
+	background: $gray-lighter;
+	background-position : bottom;
+	color: $black;
+	font-weight: bold;
+	margin: 0px;
+	width: 85px;
+	}
+
+.admin_menu_thumb a {
+	color: $black;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	padding: 1px 5px;
+	}
+
+.admin_menu_thumb a:hover {
+	color: $black;
+	text-decoration: underline;
+	}
+
+.admin_menu {
+	font-size: 10px;
+	border-top: 2px solid $gray;
+	border-left: 2px solid $gray;
+	border-bottom: 1px solid $gray-lighter;
+	border-right: 1px solid $gray-lighter;
+	background: $gray-lighter;
+	background-position : bottom;
+	color: $black;
+	margin: 0px;
+	text-align: center;
+	}
+
+.admin_menu a {
+	color: $black;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	padding: 1px 5px;
+	}
+
+.admin_menu a:hover {
+	color: $black;
+	text-decoration: underline;
+	}
+	
+.maintable {
+	border: 1px solid $gray-darker;
+	margin: 1px;
+	background-image: url(images/handu.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	}
+
+.tableh1 {
+	background: $primary;
+	font-size: 14px;
+	color : $white;
+	padding: 6px 10px;
+	}
+
+.tableh1_compact {
+	background: $tertiary;
+	color : $white;
+	padding: 2px 5px;
+	font-size: 8px;
+	}
+	
+.tableh2 {
+	background: $secondary;
+	color : $primary;
+	padding: 3px 10px;
+	}
+
+.tableh2_compact {
+	background: transparent;
+	color : $white;
+	padding: 2px 5px;
+	}
+
+.tableb {
+	background: transparent;
+	padding: 2px 10px;
+	}
+
+.tableb_compact {
+	background: transparent;
+	padding: 2px 5px;
+	}
+
+.tablef {
+	background: transparent;
+	padding: 10px;
+	}
+
+.cattitle  {
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color : $white;
+	}
+
+.catlink {
+	font-size: 24px;
+	display: block;
+	margin-bottom: 2px;
+	}
+
+.catlink a {
+	text-decoration: underline;
+	color: $primary;
+	letter-spacing: 0,5px;
+	}
+
+.catlink a:hover {
+	color: $link-hover;
+	text-decoration: none;
+	}
+
+.image {
+	border: solid 2px $gray;
+	margin: 2px;
+	}
+
+.thumbnails {
+	background: transparent;
+	padding: 5px;
+	}
+
+.album_stat {
+	font-size: 75%;
+	margin: 5px 0px;
+	}
+
+.statlink {
+	color: $white;
+	}
+
+.statlink a {
+	text-decoration: none;
+	color: $white;
+	}
+
+.statlink a:hover {
+	color: $white;
+	text-decoration: underline;
+	}
+	
+.copyright{
+    font-size: 11px;
+    color: $white;
+}
+
+/* clearFloat - leave at bottom */
+
+.clearFloat{
+    clear: both;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+}

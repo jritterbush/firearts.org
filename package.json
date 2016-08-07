@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/jritterbush/fire-arts/issues"
   },
-  "homepage": "https://github.com/jritterbush/fire-arts#readme"
+  "homepage": "https://github.com/jritterbush/fire-arts#readme",
+  "devDependencies": {
+    "assemble": "^0.17.0",
+    "browser-sync": "^2.14.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-extname": "^0.2.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "normalize.css": "^4.2.0"
+  }
 }

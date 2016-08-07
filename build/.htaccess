@@ -19,8 +19,10 @@ Redirect 301 /michael.html http://www.firearts.org/gallery/index.php?cat=11
 Redirect 301 /seth.html http://www.firearts.org/gallery.html
 Redirect 301 /dragon.html http://www.firearts.org/gallery.html
 Redirect 301 /keiko.html http://www.firearts.org/gallery.html
+Redirect 301 /jewelry.html http://www.firearts.org/classes.html
 Redirect 301 /index_old.html http://www.firearts.org/
 Redirect 301 /elio.html http://www.firearts.org/elisotelo.html
+Redirect 301 /contact.html http://www.firearts.org/contactus.html
 Redirect 301 /classes.htm http://www.firearts.org/classes.html
 Redirect 301 /aboutsite.html http://www.firearts.org/aboutus.html
 Redirect 301 /FireArts_ClassSchedule.pdf http://www.firearts.org/classes.html
