@@ -22,7 +22,7 @@ body {
     line-height: 1.45;
 }
 
-/* Typography */
+// Typography
 
 p {
     strong { 
@@ -31,7 +31,7 @@ p {
     }
 }
 
-/* **************Table Cell Properties*************** */
+// **************Table Cell Properties***************
 
 .main {
     width: 735px;
@@ -60,7 +60,7 @@ p {
 	text-align: center;
 	}
 
-/* *************Links************** */
+// *************Links**************
 
 .current1 {
 	color:$secondary;
@@ -95,7 +95,7 @@ a:hover {
 	text-decoration:underline;
 	}
 
-/* ****Navigation Links for the Coppermine Gallery**** */
+// ****Navigation Links for the Coppermine Gallery****
 
 .gallery a:link {
 	color:$primary;
@@ -177,7 +177,7 @@ a:hover {
 	font-size: 13px;
 	}
 
-/* ********Fonts, Headers, and Footers********** */
+// ********Fonts, Headers, and Footers*********
 
 ul {
 	margin-left: 25px;
@@ -194,7 +194,6 @@ ul {
 .header2, h2 {
 	font-size: 150%;
 	color: $primary; 
-	/*font-variant: small-caps;	*/
 	font-weight:normal;
 	margin:25px 0 5px 25px;
 	}
@@ -207,7 +206,6 @@ h2.section-head {
 .header3, h3 {
 	font-size: 150%; 
 	color: $primary; 
-	/*font-variant: small-caps;*/
 	font-weight:normal;
 	margin:10px 0 5px 25px;
 }
@@ -215,7 +213,6 @@ h2.section-head {
 .header4, h4 {
 	font-size: 125%; 
 	color: $primary; 
-	/*font-variant: small-caps;	*/
 	font-weight:normal;
 	margin:10px 0 5px 25px;
 	}
@@ -290,7 +287,7 @@ h2.section-head {
 	color: $primary;
 	}
 
-/* ************Special Features*********** */
+// ************Special Features***********
 
 .float1 {
 	color: $primary;
@@ -313,7 +310,7 @@ img.floatleft {
 	margin: 4px;
 	}
 
-/* COPPERMINE GaLLERY STYLE INFORMaTION: The following style classes apply to the Coppermine Gallery Page. To avoid overlap of styles, I have brought over the needed style code from the Coppermine theme and placed it here. */
+// COPPERMINE GaLLERY STYLE INFORMaTION: The following style classes apply to the Coppermine Gallery Page. To avoid overlap of styles, I have brought over the needed style code from the Coppermine theme and placed it here. */
 
 .admin_menu_thumb {
 	font-size: 10px;
@@ -472,9 +469,9 @@ img.floatleft {
     color: $white;
 }
 
-/* clearFloat - leave at bottom */
+// clearFloat - leave at bottom
 
-.clearFloat{
+.clearFloat {
     clear: both;
     height: 0;
     margin: 0;
