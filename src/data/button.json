@@ -1,8 +1,0 @@
-{
-    "list": [
-        {"modifier": "btn-default", "text": "click me"},
-        {"modifier": "btn-success", "text": "click him"},
-        {"modifier": "btn-warning", "text": "click her"},
-        {"modifier": "btn-primary", "text": "click us"}
-    ]
-}

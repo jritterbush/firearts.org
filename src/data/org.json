@@ -1,19 +1,20 @@
 {
     "name": "Fire Arts Center of Chicago",
+    "email": "info@firearts.org",
     "phone": [
         "(773) 544-9908",
         "(312) 842-2027"
     ],
-    "address": "1934 N Campbell Avenue",
+    "address": "1800 W Cornelia Ave",
     "city": "Chicago",
     "state": {
         "full": "Illinois",
         "abbv": "IL"
     },
     "zip": {
-        "main": "60647",
-        "plus4": "4443"
+        "main": "60657",
+        "plus4": "1020"
     },
-    "email": "info@firearts.org",
-    "site-url": "http://www.firearts.org"
+    "site": "http://www.firearts.org",
+    "gtmId": "GTM-5BNZSL"
 }

@@ -1,0 +1,20 @@
+---
+name: "Fire Arts Center of Chicago"
+
+email: "info@firearts.org"
+phone:
+    - "(773) 544-9908"
+    - "(312) 842-2027"
+
+address: "1934 N Campbell Avenue"
+city: "Chicago"
+state:
+    full: "Illinois"
+    abbv: "IL"
+zip:
+    main: "60647"
+    plus4: "4443"
+
+site: "http://www.firearts.org"
+gtmId: "GTM-5BNZSL"
+---

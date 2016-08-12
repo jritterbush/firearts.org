@@ -1,0 +1,14 @@
+{
+    "items": [
+        {
+            "text": "Home",
+            "url": "/",
+            "classes": "pg-home"
+        },
+        {
+            "text": "About Us",
+            "url": "/about.html",
+            "classes": "pg-about"
+        }
+    ]
+}

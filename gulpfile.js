@@ -18,41 +18,19 @@ var src          = 'src',
 
 var app = assemble();
 
-
-gulp.task('test', function() {
-    runSequence(
-        'clean',
-        'assemble:build'
-    );
-});
-
-gulp.task('assemble:load', function() { 
+gulp.task('assemble:load', function() {
     app.partials('src/templates/partials/*.hbs');
     app.layouts('src/templates/layouts/*.hbs');
     app.data('src/data/**/*.{json,yml}');
 });
 
-
-gulp.task('assemble:build', ['assemble:load'],function() {
-    app.src('src/templates/home.hbs', {layout: 'docs'})
+gulp.task('assemble', ['assemble:load'],function() {
+    return app.src('src/content/pages/**/*.hbs', {layout: 'page'})
         .pipe(app.renderFile())
         .pipe(extname())
-        .pipe(app.dest(destDev));
+        .pipe(app.dest(destDev))
+        .pipe(browserSync.stream());
 });
-
-// gulp.task('load', function() { 
-//     app.partials(src + '/templates/partials/**/*.hbs');
-//     app.layouts(src + '/templates/layouts/');
-//     app.data([data + '/**/*.json']);
-// });
-
-// gulp.task('assemble', ['load'], function() {
-//     return app.src(data + '/**/*.yml')
-//         .pipe(app.renderFile())
-//         .pipe(extname())
-//         .pipe(gulp.dest(destDev))
-//         .pipe(browserSync.stream());
-// });
 
 gulp.task('serve', ['build', 'watch'], function() {
     browserSync.init({
@@ -78,7 +56,7 @@ gulp.task('copy:images', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src(src + '/scss/main.scss')    
+    return gulp.src(src + '/scss/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: src + '/scss/_partials'
@@ -92,18 +70,18 @@ gulp.task('sass', function() {
 });
 
 gulp.task('clean', function() {
-   return del([destDev, destProd]);
+    return del([destDev, destProd]);
 });
 
 gulp.task('copy', function() {
-    runSequence(
+    return runSequence(
         'copy:normalize',
         'copy:images'
     );
 })
 
 gulp.task('build', function() {
-    runSequence(
+    return runSequence(
         'clean',
         'copy',
         'sass',
@@ -111,7 +89,7 @@ gulp.task('build', function() {
     );
 });
 
-gulp.task('deploy:dev', ['build'], function() {
+gulp.task('deploy:dev', function() {
     return gulp.src(destDev + '/**/*')
         .pipe(ghPages());
 });
@@ -122,5 +100,8 @@ gulp.task('default', ['build'], function() {
 
 gulp.task('watch', function() {
     gulp.watch(src + '/scss/**/*.scss', ['sass']);
-    gulp.watch(src + '/templates/index.html', ['tmp:copyIndex']);
+    gulp.watch([
+        src + '/templates/**/*.hbs',
+        src + '/content/**/*.{hbs,md}'
+    ], ['assemble']);
 });
