@@ -1,0 +1,17 @@
+<tr class="main-content">
+    {{> nav}}
+    <td>
+        <table style="width:598px; text-align:left;" align="center" border="0" cellpadding="4" cellspacing="4">
+            {{#if title}}
+            <tr>
+                <td class="pageindicator"><div class="header1">{{title}}</div></td>
+            </tr>
+            {{/if}}
+            <tr>
+                <td style="border-bottom:1px solid #aaa;padding-bottom:15px;">
+                    {% body %}
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
