@@ -1,0 +1,12 @@
+{
+    "header": {
+        "headerLeft": {
+            "img": "vitruvianman.jpg",
+            "alt": "metal sculpture and design"
+        },
+        "headerBanner": {
+            "img": "banner.jpg",
+            "alt": "metal sculpture and design"
+        }
+    }
+}

@@ -1,5 +1,7 @@
 {{> head}}
-    {{> hero}}
+    {{#with images.header}}
+        {{> hero}}
+    {{/with}}
     {{> content}}
     {% body %}
     {{> footer}}

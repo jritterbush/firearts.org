@@ -1,7 +1,7 @@
 ---
-description: The Fire Arts Center of Chicago provides instruction in foundry, forging, welding, metalsmithing, figure sculpture, and more.
-slug: index
 layout: index
+slug: index
+description: The Fire Arts Center of Chicago provides instruction in foundry, forging, welding, metalsmithing, figure sculpture, and more.
 ---
 
 <iframe src="http://player.vimeo.com/video/21648751?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="300" height="169" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><small><a href="http://vimeo.com/21648751">Fire Arts Center</a> from <a href="http://vimeo.com/andrewroddewig">Andrew Roddewig</a> on <a href="http://vimeo.com">Vimeo</a>.</small></p>

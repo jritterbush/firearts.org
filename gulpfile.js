@@ -7,6 +7,7 @@ var gulp        = require('gulp'),
     sourcemaps  = require('gulp-sourcemaps'),
     ghPages     = require('gulp-gh-pages'),
     extname     = require('gulp-extname'),
+    yaml        = require('gulp-yaml'),
     assemble    = require('assemble');
 
 var src          = 'src',
@@ -18,14 +19,20 @@ var src          = 'src',
 
 var app = assemble();
 
+// gulp.task('yaml', function() {
+//     return gulp.src('src/data/*.yml')
+//         .pipe(yaml())
+//         .pipe(gulp.dest('./.tmp/json'));
+// });
+
 gulp.task('assemble:load', function() {
     app.partials('src/templates/partials/*.hbs');
     app.layouts('src/templates/layouts/*.hbs');
-    app.data('src/data/**/*.{json,yml}');
+    app.data('src/data/**/*.json');
 });
 
 gulp.task('assemble', ['assemble:load'],function() {
-    return app.src('src/content/pages/**/*.{md,hbs}')
+    return app.src('src/content/pages/**/*.{md,hbs,yml}')
         .pipe(app.renderFile())
         .pipe(extname())
         .pipe(app.dest(destDev))
