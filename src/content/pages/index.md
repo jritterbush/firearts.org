@@ -1,15 +1,14 @@
 ---
 description: The Fire Arts Center of Chicago provides instruction in foundry, forging, welding, metalsmithing, figure sculpture, and more.
 slug: index
+layout: index
 ---
-
-<h2>Welcome to the Fire Arts Center of Chicago</h2>
 
 <iframe src="http://player.vimeo.com/video/21648751?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="300" height="169" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><small><a href="http://vimeo.com/21648751">Fire Arts Center</a> from <a href="http://vimeo.com/andrewroddewig">Andrew Roddewig</a> on <a href="http://vimeo.com">Vimeo</a>.</small></p>
 
-<p>The Fire Arts Center of Chicago began 17 years ago as a not-for-profit school for sculptors. Our primary mission is the <strong>preservation of traditional sculpture technique</strong> by offering high-quality training to artists, students and others seeking to learn or perfect their skills. Our secondary mission is to <strong>provide teaching, working, and exhibition opportunities for artists</strong>, as well as technical advice and facilities to artists and institutions.</p>
+The Fire Arts Center of Chicago began 17 years ago as a not-for-profit school for sculptors. Our primary mission is the <strong>preservation of traditional sculpture technique</strong> by offering high-quality training to artists, students and others seeking to learn or perfect their skills. Our secondary mission is to <strong>provide teaching, working, and exhibition opportunities for artists</strong>, as well as technical advice and facilities to artists and institutions.
 
-<p><a href="aboutus.html">Read more about the Fire Arts Center of Chicago</a></p>
+<a href="aboutus.html">Read more about the Fire Arts Center of Chicago</a>
 
 <p class="header3" style="text-align:center;">~~~</p>
 

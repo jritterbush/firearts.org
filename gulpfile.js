@@ -25,7 +25,7 @@ gulp.task('assemble:load', function() {
 });
 
 gulp.task('assemble', ['assemble:load'],function() {
-    return app.src('src/content/pages/**/*.hbs', {layout: 'page'})
+    return app.src('src/content/pages/**/*.{md,hbs}')
         .pipe(app.renderFile())
         .pipe(extname())
         .pipe(app.dest(destDev))
