@@ -1,9 +1,9 @@
-<td class="navbarbase">
-    <table class="navbar" align="center" border="0" cellpadding="0" cellspacing="0">
+<nav>
+    <ul>
         {{#each nav.items}}
-            <tr class="{{this.classes}}">
-                <td class="navbarcellmain"><span class="class1"><a href="{{this.url}}">{{this.text}}</a></span></td>
-            </tr>
+            <li class="{{this.classes}}">
+                <a href="{{this.url}}">{{this.text}}</a>
+            </li>
         {{/each}}
-    </table>
-</td>
+    </ul>
+</nav>

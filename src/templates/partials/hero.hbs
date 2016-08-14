@@ -1,12 +1,22 @@
-<tr>
-    <td class="leftheader">
-        <a href="/">
-            <img src="images/{{headerLeft.img}}" alt="{{headerLeft.alt}}">
-        </a>
-    </td>
-    <td class="banner">
-        <a href="/">
-            <img src="images/{{headerBanner.img}}" alt="{{headerBanner.alt}}">
-        </a>
-    </td>
-</tr>
+<section class="hero hero--tall" style="background-image: url('images/pour-1.png'); background-position: center 12%;">
+    <div class="card card--org">
+        <h1>
+        {{#if title }}
+            {{ title }} 
+        {{else}}
+            Fire Arts Center of Chicago
+        {{/if}}
+        </h1>
+        {{#if description}}
+            <p class="lead">{{description}}</p>
+        {{/if}}
+    </div>
+    <div class="icon icon--stripe">
+        <span class="fa-stack fa-5x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+        </span>
+    </div>
+</section>
+

@@ -1,0 +1,16 @@
+// Colors
+
+$primary: #f00;
+$secondary: #f90;
+$tertiary: #c60;
+
+$black: #000;
+$gray-darkest: #0c0c0c;
+$gray-darker: #323232;
+$gray: #999;
+$gray-lighter: #ccc;
+$gray-lightest: #eee;
+$white: #fff;
+
+$link: $primary;
+$link-hover: lighten($primary, 5%);

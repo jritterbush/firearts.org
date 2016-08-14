@@ -62,11 +62,19 @@ gulp.task('copy:images', function() {
         .pipe(gulp.dest(destDev + '/images'));
 });
 
+gulp.task('copy:fonts', function() {
+    return gulp.src(nodeModules + '/font-awesome/fonts/*')
+        .pipe(gulp.dest(destDev + '/fonts'));
+});
+
 gulp.task('sass', function() {
     return gulp.src(src + '/scss/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
-            includePaths: src + '/scss/_partials'
+            includePaths: [
+                src + '/scss/_partials',
+                nodeModules + '/font-awesome/scss'
+            ]
         }).on('error', sass.logError))
         .pipe(autoprefix({
             browsers: ['last 2 versions']
@@ -83,7 +91,8 @@ gulp.task('clean', function() {
 gulp.task('copy', function() {
     return runSequence(
         'copy:normalize',
-        'copy:images'
+        'copy:images',
+        'copy:fonts'
     );
 })
 

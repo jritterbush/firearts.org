@@ -1,0 +1,16 @@
+$grid-max-width: 1200px;
+
+.row {
+    display: flex;
+    max-width: $grid-max-width;
+    margin: 0 auto;
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.col {
+
+}
