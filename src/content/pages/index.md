@@ -2,12 +2,16 @@
 layout: index
 slug: index
 description: The Fire Arts Center of Chicago provides instruction in foundry, forging, welding, metalsmithing, figure sculpture, and more.
+sections:
+    - type: video 
+      title: Welcome to the Fire Arts Center of Chicago
+      content:
+        video: '<iframe src="https://player.vimeo.com/video/21648751?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p><a href="https://vimeo.com/21648751">Fire Arts Center</a> from <a href="https://vimeo.com/andrewroddewig">Andrew Roddewig</a> on <a href="https://vimeo.com">Vimeo</a>.</p>'
+        copy: The Fire Arts Center of Chicago began 17 years ago as a not-for-profit school for sculptors. Our primary mission is the <strong>preservation of traditional sculpture technique</strong> by offering high-quality training to artists, students and others seeking to learn or perfect their skills. Our secondary mission is to <strong>provide teaching, working, and exhibition opportunities for artists</strong>, as well as technical advice and facilities to artists and institutions.
+
 ---
 
-<iframe src="http://player.vimeo.com/video/21648751?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="300" height="169" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><small><a href="http://vimeo.com/21648751">Fire Arts Center</a> from <a href="http://vimeo.com/andrewroddewig">Andrew Roddewig</a> on <a href="http://vimeo.com">Vimeo</a>.</small></p>
-
-The Fire Arts Center of Chicago began 17 years ago as a not-for-profit school for sculptors. Our primary mission is the <strong>preservation of traditional sculpture technique</strong> by offering high-quality training to artists, students and others seeking to learn or perfect their skills. Our secondary mission is to <strong>provide teaching, working, and exhibition opportunities for artists</strong>, as well as technical advice and facilities to artists and institutions.
-
+<!--
 <a href="aboutus.html">Read more about the Fire Arts Center of Chicago</a>
 
 <p class="header3" style="text-align:center;">~~~</p>
@@ -31,3 +35,4 @@ The Fire Arts Center of Chicago began 17 years ago as a not-for-profit school fo
 <p>We are now offering various class lengths to accommodate your schedule better. Now you can choose between <strong>8 week</strong> and <strong>16 week</strong> courses in forging, jewelry, foundry, furniture, and metal sculpture.</p>
 <p>As always our class registration is rolling which means you can join at any time. The classes are small and the instructors help you work at your pace. So no matter when you start you will be walked step-by-step through the process with the personal attention you need. Join when you want and stay for as long as you need.</p> 
 <p><a href="classes.html">Click here</a> to check out all of our classes.</p>
+-->

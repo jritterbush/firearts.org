@@ -26,8 +26,8 @@ var app = assemble();
 // });
 
 gulp.task('assemble:load', function() {
-    app.partials('src/templates/partials/*.hbs');
-    app.layouts('src/templates/layouts/*.hbs');
+    app.partials('src/templates/partials/**/*.hbs');
+    app.layouts('src/templates/layouts/**/*.hbs');
     app.data('src/data/**/*.json');
 });
 
