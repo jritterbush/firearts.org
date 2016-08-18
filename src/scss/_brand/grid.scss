@@ -1,16 +1,57 @@
 $grid-max-width: 1200px;
+$gutter-width: 1rem;
 
-.row {
+.Grid {
     display: flex;
-    max-width: $grid-max-width;
-    margin: 0 auto;
-    &::after {
-        content: '';
-        display: table;
-        clear: both;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    // Elements
+    &__container {
+        max-width: $grid-max-width;
+        margin: 0 auto;
+    }
+    &__col {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    // Modifiers
+    &.Grid--gutters {
+        margin-top: -$gutter-width;
+        margin-left: -$gutter-width;
+        margin-bottom: $gutter-width;
+        .Grid__col {
+            padding-top: $gutter-width; 
+            padding-left: $gutter-width; 
+        }
+    }
+    &.Grid--flexcols {
+        .Grid__col {
+            display: flex;
+        }
+    }
+    &--top {
+        align-items: flex-start;
+    }
+    &--bottom {
+        align-items: flex-end;
+    }
+    &--center {
+        align-items: center;
+    }
+    &__col {
+        &--top {
+            align-items: flex-start;
+        }
+        &--bottom {
+            align-items: flex-end;
+        }
+        &--center {
+            align-items: center;
+        }
     }
 }
-
-.col {
-
-}
+// TODO: media queries to control how this works on mobile

@@ -1,0 +1,9 @@
+.Section {
+    & + .Section {
+        padding-top: 1.5rem;
+    }
+    &.Section--bordered {
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid $gray;
+    }
+}

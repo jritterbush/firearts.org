@@ -9,15 +9,18 @@
 @import '_brand/grid.scss';
 @import '_brand/headings.scss';
 @import '_brand/hero.scss';
+@import '_brand/sections.scss';
 
 @import 'header';
 @import 'nav';
 
 @import 'home';
 
+@import '_brand/demo.scss';
+
 // **************General Page****************
 
-* {
+*, :after, :before {
     box-sizing: border-box;
 }
 

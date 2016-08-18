@@ -1,0 +1,14 @@
+.Demo {
+    text-align: center;
+    width: 100%;
+    padding: 1em 1em 0;
+    background-color: rgba(250,250,250,0.8);
+    color: #000;
+    &::after {
+        content: '\00a0';
+        display: block;
+        visibility: hidden;
+        margin-top: 1em;
+        height: 0;
+    }
+}
