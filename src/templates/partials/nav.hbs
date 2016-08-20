@@ -1,9 +1,12 @@
-<nav>
-    <ul>
-        {{#each nav.items}}
-            <li class="{{this.classes}}">
-                <a href="{{this.url}}">{{this.text}}</a>
-            </li>
-        {{/each}}
-    </ul>
+<nav class="navbar navbar-fixed-top navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">{{ org.name }}</a>
+        <ul class="nav navbar-nav pull-md-right">
+            {{#each nav.items}}
+                <li class="nav-item {{this.classes}} {{!-- active --}}">
+                    <a class="nav-link" href="{{this.url}}">{{this.text}} {{!-- add to current page <span class="sr-only">(current)</span> --}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
 </nav>

@@ -1,16 +1,22 @@
-<section class="hero hero--tall" style="background-image: url('images/pour-1.png'); background-position: center 12%;">
-    <div class="card card--org">
-        <h1>
-        {{#if title }}
-            {{ title }} 
-        {{else}}
-            Fire Arts Center of Chicago
-        {{/if}}
-        </h1>
-        {{#if description}}
-            <p class="lead">{{description}}</p>
-        {{/if}}
+<section class="jumbotron jumbotron-fluid" style="background-image: url('images/pour-1.png'); background-position: center 12%; padding: 15rem 0 10rem;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>
+                {{#if title }}
+                    {{ title }} 
+                {{else}}
+                    Fire Arts Center of Chicago
+                {{/if}}
+                </h1>
+                {{#if description}}
+                    <p class="lead">{{description}}</p>
+                {{/if}}
+            </div>
+        </div>
     </div>
+</section>
+{{!--
     <div class="icon icon--stripe">
         <span class="fa-stack fa-5x">
           <i class="fa fa-circle fa-stack-2x"></i>
@@ -18,5 +24,4 @@
           <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
         </span>
     </div>
-</section>
-
+--}}

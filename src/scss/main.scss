@@ -1,43 +1,52 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:600';
 
-@import '_brand/colors';
-@import '_brand/typography';
+// Core variables and mixins
+@import '_brand/custom';
+@import 'variables';
+@import 'mixins';
 
-@import 'font-awesome';
+// Reset and dependencies
+@import 'normalize';
+@import 'print';
 
-@import '_brand/cards';
-@import '_brand/grid.scss';
-@import '_brand/headings.scss';
-@import '_brand/hero.scss';
-@import '_brand/sections.scss';
+// Core CSS
+@import 'reboot';
+@import 'type';
+@import 'grid';
+@import 'buttons';
 
-@import 'header';
+// Components
 @import 'nav';
+@import 'navbar';
+@import 'jumbotron';
 
-@import 'home';
+// additional tools for alignment
+@import 'utilities';
 
-@import '_brand/demo.scss';
+// @import 'font-awesome';
+
+// @import 'home';
 
 // **************General Page****************
+// 
+// 
+// // Typography
 
-*, :after, :before {
-    box-sizing: border-box;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 1px;
 }
 
-html {
-    font-size:   $font-size-base;
-    font-weight: $font-weight-base;
-    line-height: $line-height-base;
-}
+.section {
+    padding: 4.5rem 0;
+    &._tall {
 
-body {
-	background-color: $gray-darker;
-	color:            $gray-lightest;
-	font-family:      $font-family-base;
-    line-height:      1.45;
+    }
 }
-
-// Typography
 
 p {
     strong {
@@ -47,5 +56,14 @@ p {
 }
 
 .footer {
-    background-color: $primary;
+    background-color: $brand-primary;
+    a {
+        color: $gray-lightest;
+        border-bottom: 1px dotted $white;
+        &:hover {
+            color: $white;
+            text-decoration: none;
+            border-bottom: 1px solid $white;
+        }
+    }
 }

@@ -1,13 +1,15 @@
 <footer class="footer">
-    <div class="row">
-        <div class="col">
-            <p>{{ org.name }} | {{ org.address }} | {{ org.city }}, {{ org.state.abbv }} {{org.zip.main }}<br />
-                    {{#each org.phone}}
-                        Tel: {{this}} |
-                    {{/each}}
-                    Email: <a href="mailto:{{ org.email }}">{{ org.email }}</a>
-                </p>
-            <p class="tiny">&copy; {{org.name}}. <a href="{{ org.site }}/sitemap.html">Sitemap</a></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs">
+                <p>{{ org.name }} | {{ org.address }} | {{ org.city }}, {{ org.state.abbv }} {{org.zip.main }}<br />
+                        {{#each org.phone}}
+                            Tel: {{this}} |
+                        {{/each}}
+                        Email: <a href="mailto:{{ org.email }}">{{ org.email }}</a>
+                    </p>
+                <p class="tiny">&copy; {{org.name}}. <a href="{{ org.site }}/sitemap.html">Sitemap</a></p>
+            </div>
         </div>
     </div>
 </footer>

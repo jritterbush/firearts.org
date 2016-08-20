@@ -47,11 +47,6 @@ gulp.task('serve', ['build', 'watch'], () => {
     });
 });
 
-gulp.task('copy:normalize', () => {
-    return gulp.src(nodeModules + '/normalize.css/normalize.css')
-        .pipe(gulp.dest(destDev + '/css/vendors'));
-});
-
 gulp.task('copy:static', () => {
     return gulp.src(src + '/static/**')
         .pipe(gulp.dest(destDev));
@@ -72,13 +67,19 @@ gulp.task('sass', () => {
         .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: [
-                src + '/scss/_partials',
-                nodeModules + '/font-awesome/scss'
+                nodeModules + '/bootstrap/scss',
+                nodeModules + '/font-awesome/scss',
+                nodeModules + '/normalize.css',
+                src + '/scss/_partials'
             ]
         }).on('error', sass.logError))
         .pipe(autoprefix({
             browsers: ['last 2 versions']
         }))
+        // .pipe(uncss({
+        //     html: ['dist/**/*.html']    
+        // })) // move to production build
+        // .pipe(cleanCSS()) // move to production build
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(destDev + '/css'))
         .pipe(browserSync.stream());
@@ -90,7 +91,7 @@ gulp.task('clean', () => {
 
 gulp.task('copy', () => {
     return runSequence(
-        'copy:normalize',
+        'copy:static',
         'copy:images',
         'copy:fonts'
     );

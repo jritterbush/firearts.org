@@ -1,22 +1,21 @@
 ---
 layout: index
-slug: index
+id: home
 description: The Fire Arts Center of Chicago provides instruction in foundry, forging, welding, metalsmithing, figure sculpture, and more.
 sections:
     - type: video 
-      title: Welcome to the Fire Arts Center of Chicago
+      title: About the Fire Arts Center
       content:
-        video: '<iframe src="https://player.vimeo.com/video/21648751?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p><a href="https://vimeo.com/21648751">Fire Arts Center</a> from <a href="https://vimeo.com/andrewroddewig">Andrew Roddewig</a> on <a href="https://vimeo.com">Vimeo</a>.</p>'
+        video: '<iframe src="https://player.vimeo.com/video/21648751?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p class="small"><a href="https://vimeo.com/21648751">Fire Arts Center</a> from <a href="https://vimeo.com/andrewroddewig">Andrew Roddewig</a> on <a href="https://vimeo.com">Vimeo</a>.</p>'
         copy: The Fire Arts Center of Chicago began 17 years ago as a not-for-profit school for sculptors. Our primary mission is the <strong>preservation of traditional sculpture technique</strong> by offering high-quality training to artists, students and others seeking to learn or perfect their skills. Our secondary mission is to <strong>provide teaching, working, and exhibition opportunities for artists</strong>, as well as technical advice and facilities to artists and institutions.
 
 ---
 
 <!--
-<a href="aboutus.html">Read more about the Fire Arts Center of Chicago</a>
-
-<p class="header3" style="text-align:center;">~~~</p>
-
-<span class="header3" style="font-weight:bold;">What's New</span>
+    - type: promo-repeater
+      title: What's New
+      content:
+        - headline: One-Year Intensive Programs
 
 <p class="header3" style="text-align:center;">~~~</p>
 <h3><a href="year-intensive.html">One-Year Intensive Programs</a></h3>

@@ -5,13 +5,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{#if title}}{{ title }} | {{/if}}{{ org.name }}</title>
     <meta name="description" content="{{description}}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="google-site-verification" content="voNSOXT4bvlNtxPlXtHAGFsLfwiC0COAIKx7K06tWEE" />
 
-    <link href="css/vendors/normalize.css" type="text/css" rel="stylesheet" />
+    {{!-- TODO add favicon and other icon refs --}}
+    {{!-- TODO add social media share options  --}}
     <link href="css/main.css" type="text/css" rel="stylesheet" />
 </head>
-<body>
+<body{{#if id}} id="{{id}}"{{/if}}>
 {{> gtm}}
-    <div class="wrapper">
