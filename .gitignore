@@ -2,5 +2,5 @@
 npm-debug.log
 node_modules
 .publish
-build/dev
-build/prod
+dist/dev
+dist/prod

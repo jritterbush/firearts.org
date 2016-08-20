@@ -1,3 +1,5 @@
+'use strict'
+
 import gulp from 'gulp'
 import browserSync from 'browser-sync';
 import sass from 'gulp-sass';
@@ -7,17 +9,20 @@ import runSequence from 'run-sequence';
 import sourcemaps from 'gulp-sourcemaps';
 import ghPages from 'gulp-gh-pages';
 import extname from 'gulp-extname';
+import rename from 'gulp-rename';
 import yaml from 'gulp-yaml';
-import assemble from 'assemble';
+// import assemble from 'assemble';
+import uncss from 'gulp-uncss';
+import cleanCSS from 'gulp-clean-css';
 
 const src          = 'src';
-const destDev      = 'build/dev';
-const destProd     = 'build/prod';
+const destDev      = 'dist/dev';
+const destProd     = 'dist/prod';
 const nodeModules  = 'node_modules';
 const data         = 'src/data';
 const content      = 'src/content';
 
-let app = assemble();
+// let app = assemble();
 
 // gulp.task('yaml', function() {
 //     return gulp.src('src/data/*.yml')
@@ -25,19 +30,23 @@ let app = assemble();
 //         .pipe(gulp.dest('./.tmp/json'));
 // });
 
-gulp.task('assemble:load', () => {
-    app.partials('src/templates/partials/**/*.hbs');
-    app.layouts('src/templates/layouts/**/*.hbs');
-    app.data('src/data/**/*.json');
-});
+// gulp.task('assemble:load', () => {
+//     app.partials('src/templates/partials/**/*.hbs');
+//     app.layouts('src/templates/layouts/**/*.hbs');
+//     app.data('src/data/**/*.json');
+// });
 
-gulp.task('assemble', ['assemble:load'], () => {
-    return app.src('src/content/pages/**/*.{md,hbs,yml}')
-        .pipe(app.renderFile())
-        .pipe(extname())
-        .pipe(app.dest(destDev))
-        .pipe(browserSync.stream());
-});
+// gulp.task('assemble', ['assemble:load'], () => {
+//     return app.src('src/content/pages/**/*.{md,hbs,yml}', {
+//             options: {
+//                 helpers: ['src/helpers/**/*.js']
+//             }
+//         })
+//         .pipe(app.renderFile())
+//         .pipe(extname())
+//         .pipe(app.dest(destDev))
+//         .pipe(browserSync.stream());
+// });
 
 gulp.task('serve', ['build', 'watch'], () => {
     browserSync.init({
@@ -48,7 +57,8 @@ gulp.task('serve', ['build', 'watch'], () => {
 });
 
 gulp.task('copy:static', () => {
-    return gulp.src(src + '/static/**')
+    return gulp.src(src + '/static**/*')
+        .pipe(rename({dirname:''}))
         .pipe(gulp.dest(destDev));
 });
 
@@ -100,9 +110,9 @@ gulp.task('copy', () => {
 gulp.task('build', () => {
     return runSequence(
         'clean',
-        'copy',
+        // 'assemble',
         'sass',
-        'assemble'
+        'copy'
     );
 });
 
@@ -117,8 +127,8 @@ gulp.task('default', ['build'], () => {
 
 gulp.task('watch', () => {
     gulp.watch(src + '/scss/**/*.scss', ['sass']);
-    gulp.watch([
-        src + '/templates/**/*.hbs',
-        src + '/content/**/*.{hbs,md}'
-    ], ['assemble']);
+    // gulp.watch([
+    //     src + '/templates/**/*.hbs',
+    //     src + '/content/**/*.{hbs,md}'
+    // ], ['assemble']);
 });
