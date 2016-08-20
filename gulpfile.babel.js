@@ -1,23 +1,23 @@
-var gulp        = require('gulp'),
-    browserSync = require('browser-sync'),
-    sass        = require('gulp-sass'),
-    autoprefix  = require('gulp-autoprefixer'),
-    del         = require('del'),
-    runSequence = require('run-sequence'),
-    sourcemaps  = require('gulp-sourcemaps'),
-    ghPages     = require('gulp-gh-pages'),
-    extname     = require('gulp-extname'),
-    yaml        = require('gulp-yaml'),
-    assemble    = require('assemble');
+import gulp from 'gulp'
+import browserSync from 'browser-sync';
+import sass from 'gulp-sass';
+import autoprefix from 'gulp-autoprefixer';
+import del from 'del';
+import runSequence from 'run-sequence';
+import sourcemaps from 'gulp-sourcemaps';
+import ghPages from 'gulp-gh-pages';
+import extname from 'gulp-extname';
+import yaml from 'gulp-yaml';
+import assemble from 'assemble';
 
-var src          = 'src',
-    destDev      = 'build/dev',
-    destProd     = 'build/prod',
-    nodeModules  = 'node_modules',
-    data         = 'src/data',
-    content      = 'src/content';
+const src          = 'src';
+const destDev      = 'build/dev';
+const destProd     = 'build/prod';
+const nodeModules  = 'node_modules';
+const data         = 'src/data';
+const content      = 'src/content';
 
-var app = assemble();
+let app = assemble();
 
 // gulp.task('yaml', function() {
 //     return gulp.src('src/data/*.yml')
@@ -25,13 +25,13 @@ var app = assemble();
 //         .pipe(gulp.dest('./.tmp/json'));
 // });
 
-gulp.task('assemble:load', function() {
+gulp.task('assemble:load', () => {
     app.partials('src/templates/partials/**/*.hbs');
     app.layouts('src/templates/layouts/**/*.hbs');
     app.data('src/data/**/*.json');
 });
 
-gulp.task('assemble', ['assemble:load'],function() {
+gulp.task('assemble', ['assemble:load'], () => {
     return app.src('src/content/pages/**/*.{md,hbs,yml}')
         .pipe(app.renderFile())
         .pipe(extname())
@@ -39,7 +39,7 @@ gulp.task('assemble', ['assemble:load'],function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('serve', ['build', 'watch'], function() {
+gulp.task('serve', ['build', 'watch'], () => {
     browserSync.init({
         server: {
             baseDir: destDev
@@ -47,27 +47,27 @@ gulp.task('serve', ['build', 'watch'], function() {
     });
 });
 
-gulp.task('copy:normalize', function() {
+gulp.task('copy:normalize', () => {
     return gulp.src(nodeModules + '/normalize.css/normalize.css')
         .pipe(gulp.dest(destDev + '/css/vendors'));
 });
 
-gulp.task('copy:static', function() {
+gulp.task('copy:static', () => {
     return gulp.src(src + '/static/**')
         .pipe(gulp.dest(destDev));
 });
 
-gulp.task('copy:images', function() {
+gulp.task('copy:images', () => {
     return gulp.src(src + '/images/*')
         .pipe(gulp.dest(destDev + '/images'));
 });
 
-gulp.task('copy:fonts', function() {
+gulp.task('copy:fonts', () => {
     return gulp.src(nodeModules + '/font-awesome/fonts/*')
         .pipe(gulp.dest(destDev + '/fonts'));
 });
 
-gulp.task('sass', function() {
+gulp.task('sass', () => {
     return gulp.src(src + '/scss/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
@@ -84,11 +84,11 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('clean', function() {
+gulp.task('clean', () => {
     return del([destDev, destProd]);
 });
 
-gulp.task('copy', function() {
+gulp.task('copy', () => {
     return runSequence(
         'copy:normalize',
         'copy:images',
@@ -96,7 +96,7 @@ gulp.task('copy', function() {
     );
 })
 
-gulp.task('build', function() {
+gulp.task('build', () => {
     return runSequence(
         'clean',
         'copy',
@@ -105,16 +105,16 @@ gulp.task('build', function() {
     );
 });
 
-gulp.task('deploy:dev', function() {
+gulp.task('deploy:dev', () => {
     return gulp.src(destDev + '/**/*')
         .pipe(ghPages());
 });
 
-gulp.task('default', ['build'], function() {
+gulp.task('default', ['build'], () => {
     console.log("Built dev site");
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', () => {
     gulp.watch(src + '/scss/**/*.scss', ['sass']);
     gulp.watch([
         src + '/templates/**/*.hbs',
