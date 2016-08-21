@@ -1,1 +1,13 @@
-<h2>{{ title }}</h2>
+<section id="whats-new">
+    <div class="container">
+        <h2>{{ title }}</h2>
+        <div class="row">
+            {{#each feature}}
+                <div class="col-xs">
+                    <h3>{{headline}}</h3>
+                    <p>{{{description}}}</p>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
