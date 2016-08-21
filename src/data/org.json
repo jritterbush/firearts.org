@@ -15,10 +15,17 @@
         "main": "60657",
         "plus4": "1020"
     },
-    "site": {
-        "development": "localhost:3000",
+    "map": {
+        "link": "https://www.google.com/maps?ll=41.945402,-87.674373&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=14789418524047126535",
+        "embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.5555136363187!2d-87.67656208453502!3d41.94540167921694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd24099688cbf%3A0xcd3e91ca38693007!2sFire+Arts+Center+of+Chicago!5e0!3m2!1sen!2sus!4v1471808654546\" width=\"100%\" height=\"400\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>" 
+    },
+    "siteRoot": {
+        "development": "",
         "stage": "//jritterbush.github.io/fire-arts",
         "production": "//www.firearts.org"
+    },
+    "docs": {
+        "register": "FireArts_RegistrationForm.pdf"
     },
     "gtmId": "GTM-5BNZSL"
 }

@@ -1,0 +1,26 @@
+<div class="card card-primary card-inverse">
+    <div class="card-block">
+        <h2>How do I sign up?</h2>
+        <ol>
+            <li>Print out our sign-up form.</li>
+            <li>Deliver the form and registration fee ($50 check) by:
+                <ul>
+                    <li>...stopping by during class hours and drop it off</li>
+                    <li>...mailing it to us</li>
+                </ul>
+            </li>
+        </ol>
+        <p>
+            {{org.name}}<br>
+            {{org.address}}<br>
+            {{org.city}}, {{org.state.abbv}} {{org.zip.main}}
+        </p>
+
+
+        <p>Reach out to us with any questions you might have.</p>
+        <p>
+            <strong>Phone</strong>:{{#each org.phone}} {{this}} {{#unless @index}} or {{/unless}} {{/each}}<br>
+            <strong>Email</strong>: {{org.email}}
+        </p>
+    </div>
+</div>
