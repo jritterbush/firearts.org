@@ -15,6 +15,10 @@
         "main": "60657",
         "plus4": "1020"
     },
-    "site": "http://www.firearts.org",
+    "site": {
+        "development": "localhost:3000",
+        "stage": "//jritterbush.github.io/fire-arts",
+        "production": "//www.firearts.org"
+    },
     "gtmId": "GTM-5BNZSL"
 }

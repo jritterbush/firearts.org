@@ -15,7 +15,10 @@ helpers();
 gulp.task('load', (callback) => {
     app.layouts('src/templates/layouts/**/*.hbs');
     app.partials('src/templates/partials/**/*.hbs');
-    app.pages('src/content/pages/**/*.{md,hbs}');
+    app.pages([
+        'src/content/pages/**/*.{md,hbs}',
+        'src/content/class/**/*.{md,hbs}'
+    ]);
     app.data('src/data/**/*.json');
     callback();
 });
@@ -24,10 +27,16 @@ gulp.task('assemble', ['load'], () => {
     return app.toStream('pages')
         .pipe(app.renderFile())
         .pipe(rename(function(path) {
-            if (path.basename !== 'index') {
-                path.dirname = path.basename;
-                path.basename = 'index';
+            // cache these path values to reuse later
+            const dirname = path.dirname;
+            const basename = path.basename;
+            if (basename !== 'index') {
+                path.dirname = basename;
             }
+            if (dirname.indexOf('class') !== -1) {
+                path.dirname = 'class/' + basename;
+            }
+            path.basename = 'index';
             path.extname = '.html';
         }))
         .pipe(app.dest(config.destDev))

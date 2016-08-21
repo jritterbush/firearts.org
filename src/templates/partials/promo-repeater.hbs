@@ -5,7 +5,12 @@
             {{#each feature}}
                 <div class="col-xs">
                     <h3>{{headline}}</h3>
-                    <p>{{{description}}}</p>
+                    {{#each description}}
+                        <p>{{{this}}}</p>
+                    {{/each}}
+                    {{#if cta}}
+                        <a href="{{cta.link}}" class="{{cta.class}}">{{{cta.text}}}</a>
+                    {{/if}}
                 </div>
             {{/each}}
         </div>
