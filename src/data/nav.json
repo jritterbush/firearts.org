@@ -6,9 +6,26 @@
             "classes": "pg-home"
         },
         {
-            "text": "About Us",
-            "url": "/about.html",
+            "text": "About",
+            "url": "about/",
             "classes": "pg-about"
+        },
+        {
+            "text": "Classes",
+            "url": "classes/",
+            "classes": "pg-classes",
+            "subitems": [
+                {
+                    "text": "Figure Study",
+                    "url": "class/figure-study",
+                    "classes": "pg-class-figure-study"
+                },
+                {
+                    "text": "Metal Sculpture",
+                    "url": "class/metal-sculpture",
+                    "classes": "pg-class-metal-sculpture"
+                }
+            ]
         }
     ]
 }
