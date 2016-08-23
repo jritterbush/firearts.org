@@ -35,6 +35,7 @@
     "gulp-uncss": "^1.0.6",
     "gulp-yaml": "^1.0.1",
     "handlebars-helpers": "^0.7.5",
+    "require-dir": "^0.3.0",
     "run-sequence": "^1.2.2"
   },
   "dependencies": {

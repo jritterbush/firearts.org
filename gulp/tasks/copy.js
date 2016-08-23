@@ -5,7 +5,7 @@ import config from '../config';
 import rename from 'gulp-rename';
 
 gulp.task('copy:static', () => {
-    return gulp.src(config.src + '/static**/*')
+    return gulp.src([config.src + '/static/**/*',config.src + '/static/**/.*'])
         .pipe(rename({dirname:''}))
         .pipe(gulp.dest(config.destDev));
 });

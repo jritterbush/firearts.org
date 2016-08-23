@@ -17,7 +17,9 @@ gulp.task('load', (callback) => {
     app.partials('src/templates/partials/**/*.hbs');
     app.pages([
         'src/content/pages/**/*.{md,hbs}',
-        'src/content/class/**/*.{md,hbs}'
+        'src/content/people/**/*.{md,hbs}',
+        'src/content/links/**/*.{md,hbs}',
+        'src/content/classes/**/*.{md,hbs}'
     ]);
     app.data('src/data/**/*.json');
     callback();
@@ -33,8 +35,12 @@ gulp.task('assemble', ['load'], () => {
             if (basename !== 'index') {
                 path.dirname = basename;
             }
-            if (dirname.indexOf('class') !== -1) {
-                path.dirname = 'class/' + basename;
+            if (dirname.indexOf('classes') !== -1) {
+                path.dirname = 'classes/' + basename;
+            } else if (dirname.indexOf('people') !== -1) {
+                path.dirname = 'people/' + basename;
+            } else if (dirname.indexOf('links') !== -1) {
+                path.dirname = 'links/' + basename;
             }
             path.basename = 'index';
             path.extname = '.html';
