@@ -16,7 +16,7 @@ gulp.task('copy:images', () => {
 });
 
 gulp.task('copy:fonts', () => {
-    return gulp.src(config.nodeModules + '/font-awesome/fonts/*')
+    return gulp.src(config.node + '/font-awesome/fonts/*')
         .pipe(gulp.dest(config.destDev + '/fonts'));
 });
 

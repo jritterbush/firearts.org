@@ -8,8 +8,7 @@ requireDir('./gulp/tasks', { recurse: true });
 
 gulp.task('build', ['clean'], () => {
     return runSequence(
-        'sass',
-        'copy',
+        ['sass', 'copy'],
         'assemble'
     );
 });

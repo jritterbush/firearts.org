@@ -1,12 +1,15 @@
 <nav class="navbar navbar-fixed-top navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="/">{{ org.name }}</a>
-        <ul class="nav navbar-nav pull-md-right">
-            {{#each nav.items}}
-                <li class="nav-item {{this.classes}} {{!-- active --}}">
-                    <a class="nav-link" href="{{this.url}}">{{this.text}} {{!-- add to current page <span class="sr-only">(current)</span> --}}</a>
-                </li>
-            {{/each}}
-        </ul>
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
+        <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+            <a class="navbar-brand" href="/">{{ org.name }}</a>
+            <ul class="nav navbar-nav">
+                {{#each nav.items}}
+                    <li class="nav-item {{this.classes}} {{!-- active --}}">
+                        <a class="nav-link" href="{{this.url}}">{{this.text}} {{!-- add to current page <span class="sr-only">(current)</span> --}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
     </div>
 </nav>
