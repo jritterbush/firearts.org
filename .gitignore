@@ -1,7 +1,3 @@
-.DS_Store
-npm-debug.log
-node_modules
-.publish
-dist/dev
-dist/prod
-_holdingCell
+_site
+.sass-cache
+.jekyll-metadata
