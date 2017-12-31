@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Fire Arts Artists 
+title: Fire Arts Artists
 id: links-firearts-artists
+permalink: /links/artists/
 content: |
     <p>For a look at the websites of some of the Fire Arts Center arists check out the links below. The members' pages below offer a expansive look at each artist's individual works and studios. We are proud to have all of them working with the Fire Arts Center of Chicago and want you to see the types of artists that will be running the classes that you can take. All the links below open in a new window, so you can easily return to our site and <a href="/register">register for that instructor's classes</a> right away!</p>
     <ul>

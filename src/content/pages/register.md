@@ -2,6 +2,7 @@
 layout: page
 title: Class Sign-up 
 id: signup 
+permalink: /register/
 lead: Find out how to sign up for classes at the Fire Arts Center of Chicago below.
 ---
 <section id="class-signup">

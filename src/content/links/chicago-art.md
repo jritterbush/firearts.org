@@ -2,6 +2,7 @@
 layout: page
 title: Chicago Art Links
 id: links-chicago
+permalink: /links/chicago-art/
 content: |
     <p>Artists of Chicago, unite. Here is a collection of links to a variety of art sources in Chicago. From artist's groups (like the Fire Arts Center) to online art information. All of the links below open in a new window so when you're done browsing be sure to stop back and <a href="membership.html">sign up for classes</a> at the Fire Arts Center of Chicago.</p>
     <ul>

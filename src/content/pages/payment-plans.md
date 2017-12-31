@@ -2,6 +2,7 @@
 layout: page
 id: payment-plans
 title: Payment Plans and Discounts
+permalink: /about/payment-plans/
 ---
 
 <p>We at the Fire Arts Center of Chicago are not immune to the challenges of a difficult economy. Our mission has always been to preserve the traditional methods and techniques of sculptors as well as the technical skills relevant to those just looking to develop a new trade. In order for us to meet that mission we need to provide our classes to as many people as we can. However, when times are tough, finding the money to pay for classes like this is hard. For that reason we have been offering a 1/2-down payment plan to make it easier to pay for classes. Now, in addition to that discount, we are introducing a bartered services option to reduce class prices.</p>

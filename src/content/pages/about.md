@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about/
 id: about
 lead: The <strong>Fire Arts Center of Chicago</strong> began 17 years ago as a not-for-profit school for sculptors. Our primary mission is the preservation of traditional sculpture technique by offering high-quality training to artists, students and others seeking to learn or perfect their skills. Our secondary mission is to provide teaching, working, and exhibition opportunities for artists, as well as technical advice and facilities to artists and institutions.
 abouts:

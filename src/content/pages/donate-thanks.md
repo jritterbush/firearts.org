@@ -2,6 +2,7 @@
 layout: page
 title: Thank You
 id: donate-thanks
+permalink: /donate/thanks/
 content: |
     <p>Thanks so much for helping out with your generous donation. Your transaction has been completed, and a receipt for your purchase has been emailed to you.</p>
     <p>We at the <em>Fire Arts Center of Chicago</em> appreciate all the help we can get and it is thanks to the help of people like you that we are able to keep going strong.</p>

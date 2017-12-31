@@ -1,6 +1,7 @@
 ---
-layout: index
+layout: home
 id: home
+permalink: /
 jumbotronBig: true
 lead: The Fire Arts Center of Chicago provides instruction in foundry, forging, welding, metalsmithing, figure sculpture, and more.
 sections:
@@ -32,16 +33,6 @@ sections:
 
 ---
 
-{{#with sections.videoSection}}
-    {{> video}}
-{{/with}}
-
-{{#with sections.promoRepeater}}
-    {{> promo-repeater}}
-{{/with}}
-
-<!--
-
 <p class="header3" style="text-align:center;">~~~</p>
 <h3><a href="year-intensive.html">One-Year Intensive Programs</a></h3>
 <p>
@@ -59,4 +50,3 @@ sections:
 <p>We are now offering various class lengths to accommodate your schedule better. Now you can choose between <strong>8 week</strong> and <strong>16 week</strong> courses in forging, jewelry, foundry, furniture, and metal sculpture.</p>
 <p>As always our class registration is rolling which means you can join at any time. The classes are small and the instructors help you work at your pace. So no matter when you start you will be walked step-by-step through the process with the personal attention you need. Join when you want and stay for as long as you need.</p> 
 <p><a href="classes.html">Click here</a> to check out all of our classes.</p>
--->

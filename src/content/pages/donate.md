@@ -3,6 +3,7 @@ layout: page
 title: Donate to the Fire Arts Center 
 lead: So you want to help out the Fire Arts Center of Chicago. There are a number of ways you can help.
 id: donate
+permalink: /donate/
 content: |
     <ul>
         <li>Take a class: That's right. Just sign up for a class. We here at Fire Arts are excited about sharing our knowledge with the community. We love having the studio full of excited people making art. And on top of it, the money you give for classes goes to the promotion of more classes! So <a href="/register" title="Sign up for classes today!">sign up today</a>.</li>

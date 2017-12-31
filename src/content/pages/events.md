@@ -2,6 +2,7 @@
 layout: page
 title: Upcoming Events
 id: events
+permalink: /events/
 lead: As if you need more excuses to stop by the Fire Arts Center of Chicago. Check back for special events and open houses.
 ---
 <section id="events">

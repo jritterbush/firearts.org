@@ -2,6 +2,7 @@
 layout: page
 title: Figure Study
 id: figure-study
+permalink: /classes/figure-study/
 content: |
     <img src="/images/figure-sculpture.jpg" alt="Figure Sculpture at the Fire Arts Center">
     <p>Here at The Fire Arts Center, we see figure sculpture as essential to the understanding of the complexity of 3-dimensional form&mdash;as drawing is to the understanding of color, light and composition. The relationship between sculpting the figure and bronze casting is a long one, dating back to the first attempt to master the bronze casting process.</p>

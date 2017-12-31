@@ -2,6 +2,7 @@
 layout: page
 title: Foundry
 id: foundry 
+permalink: /classes/foundry/
 content: |
     <img src="/images/found1.jpg" alt="Bronze Sculpture Casting at the Fire Arts Center">
     <h3>Bronze Casting &amp; Mold Making</h3>

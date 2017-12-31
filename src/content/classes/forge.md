@@ -2,6 +2,7 @@
 layout: page
 title: Forge
 id: forge
+permalink: /classes/forge/
 content: |
     <h3>Knife and Sword Making</h3>
     <p>Instructors: Micheal Bennett, Vincent Hawkins, &amp; Chris Mayor<br />

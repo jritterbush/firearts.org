@@ -2,6 +2,7 @@
 layout: page
 title: Furniture
 id: furniture
+permalink: /classes/metal-furniture/
 content: |
     <h3>Metal Furniture Studio</h3>
     <p>Instructors: Vincent Hawkins &amp; Micheal Bennett<br />

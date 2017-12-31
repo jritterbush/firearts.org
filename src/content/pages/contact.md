@@ -2,6 +2,7 @@
 layout: page
 title: Contact the Fire Arts Center 
 id: contact 
+permalink: /contact/
 content: |
     <p>If you are interested in bronze or iron casting (using the lost-wax method), metal furniture design, armor forging, stone carving, figure sculpture, figure drawing or just want to check out the Fire Arts Center of Chicago's studio, please contact us and let us know.</p>
     <p>You can reach us by email at either of the email addresses below:</p> 
