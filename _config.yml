@@ -26,6 +26,7 @@ timezone: America/Chicago
 # github_username: FireArtsCenter
 
 # Build settings
+source: src
 markdown: kramdown
 plugins:
   - jekyll-feed
