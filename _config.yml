@@ -21,6 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+timezone: America/Chicago
 # twitter_username: jekyllrb
 # github_username: FireArtsCenter
 
@@ -47,3 +48,16 @@ exclude:
   - gulp/
   - gulpfile.js
   - gulpfile.babel.js
+
+gtm_id: GTM-5BNZSL
+
+organization:
+    name: Fire Arts Center of Chicago
+    address: 1830 N Kostner
+    city: Chicago
+    state: IL
+    zip: 60639
+    phones:
+        - 773.544.9908
+        - 312.842.2027
+    email: info@firearts.org
