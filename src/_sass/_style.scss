@@ -54,6 +54,10 @@ td {
     display: block;
 }
 
+#content > table {
+    width: 100%;
+}
+
 .content {
     padding: 1rem;
 }
@@ -358,19 +362,23 @@ h4 {
     width: 100%;
 }
 
-.class-categories td:not(.pageindicator) {
-    width: 118px;
-    height: 118px;
+.class-categories td {
+    width: 100px;
+    height: 100px;
 
     text-align: center;
 }
 
 .class-categories td img {
-    margin: 0.125rem;
+    display: block;
+
+    max-width: 100%;
 }
 
 .class-categories a {
     display: block;
+
+    padding-bottom: 0;
 }
 
 .class-categories td a:focus,
