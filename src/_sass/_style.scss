@@ -5,11 +5,12 @@
 /* **************General Page**************** */
 
 body {
-    background-color: #222;
-    color: #c9c9c9;
-    font-family: "Futura Lt BT", arial, sans-serif;
+    font-family: 'Futura Lt BT', arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
+
+    color: #c9c9c9;
+    background-color: #222;
 }
 
 *,
@@ -39,8 +40,9 @@ td {
 
 .leftheader {
     width: 137px;
-    text-align: center;
     padding-right: 20px;
+
+    text-align: center;
 }
 
 .banner {
@@ -57,9 +59,10 @@ td {
 }
 
 .note {
-    border-bottom: 1px dotted #ededed;
-    padding-bottom: 1rem;
     margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+    border-bottom: 1px dotted #ededed;
 }
 
 .leftheader img {
@@ -75,23 +78,28 @@ td {
 }
 
 .pageindicator {
-    background-color: #900;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
+
     border-radius: 3px;
+    background-color: #900;
 }
 
 .footer {
-    font-size: .75rem;
+    font-size: 0.75rem;
+
     padding: 3rem 0 1rem;
+
     border-top: 1px solid #333;
 }
 
 /* *************Links************** */
 
 a {
-    color: #fff;
-    padding-bottom: .125rem;
+    padding-bottom: 0.125rem;
+
     text-decoration: none;
+
+    color: #fff;
     border-bottom: 1px dotted #ededed;
 }
 
@@ -105,7 +113,7 @@ a:active {
 
 a:focus,
 a:hover {
-    color:#f90;
+    color: #f90;
     border-bottom: 1px solid #f90;
 }
 
@@ -119,11 +127,13 @@ a:hover {
 /* Naviation */
 
 .navbar ul {
-    list-style: none;
-    margin-left: 0;
-    margin-left: .5rem;
     font-weight: 600;
-    padding-left: .5rem;
+
+    margin-left: 0;
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+
+    list-style: none;
 }
 
 .navbar a:focus {
@@ -131,7 +141,7 @@ a:hover {
 }
 
 .navbar > ul > li {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
 }
 
 .navbar ul ul {
@@ -165,8 +175,9 @@ a:hover {
 .wishlist .navbar .donate ul,
 .donate .navbar .donate ul {
     display: block;
+
     height: auto;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
 }
 
 .home .navbar .home > a,
@@ -198,6 +209,7 @@ a:hover {
 .wishlist .navbar .wishlist > a,
 .donate .navbar .donate > a {
     cursor: default;
+
     color: #fff;
 }
 
@@ -229,26 +241,29 @@ a:hover {
 .contact .navbar .contact > a::after,
 .wishlist .navbar .wishlist > a::after,
 .donate .navbar .donate > a::after {
-    content: "\203A";
-    padding-left: .25rem;
+    padding-left: 0.25rem;
+
+    content: '\203A';
 }
 
 .navbar a {
+    text-align: right;
+    text-decoration: none;
+
     color: #adadad;
-    text-decoration:none;
-    text-align:right;
 }
 
 .navbar li a:hover::after,
 .navbar li a:focus::after {
-    content: "\203A";
-    padding-left: .25rem;
+    padding-left: 0.25rem;
+
+    content: '\203A';
 }
 
 .navbar ul ul li {
-    font-size: .85rem;
-    line-height: 2.5;
+    font-size: 0.85rem;
     font-weight: 400;
+    line-height: 2.5;
 }
 
 
@@ -265,8 +280,9 @@ h3,
 h4,
 h5,
 h6 {
-    color: #fff;
     font-weight: normal;
+
+    color: #fff;
 }
 
 h2,
@@ -279,6 +295,7 @@ h6 {
 
 h1 {
     font-size: 2rem;
+
     margin: 0;
 }
 
@@ -288,6 +305,7 @@ h2 {
 
 h2.section-head {
     margin-top: 50px;
+
     border-bottom: 1px solid #900;
 }
 
@@ -300,36 +318,39 @@ h4 {
 }
 
 .date {
-	font-size: 75%;
-	}
+    font-size: 75%;
+}
 
 .tiny {
-	font-size: 75%;
-	}
+    font-size: 75%;
+}
 
 .underline {
-	text-decoration: underline;	
-	}
+    text-decoration: underline;
+}
 
 .backtotop {
-	text-decoration: underline;
-	font-size: 80%;
-	}
+    font-size: 80%;
+
+    text-decoration: underline;
+}
 
 .formindent {
-	margin-left: 25px;	
-	}
+    margin-left: 25px;
+}
 
 .requiredfields {
-	color: #900;
-	font-style: italic;
-	font-weight: bold;
-	}
+    font-weight: bold;
+    font-style: italic;
+
+    color: #900;
+}
 
 .emphasis {
-	font-style: italic;
-	color: #990000;
-	}
+    font-style: italic;
+
+    color: #900;
+}
 
 /* ************Classes*********** */
 
@@ -340,11 +361,12 @@ h4 {
 .class-categories td:not(.pageindicator) {
     width: 118px;
     height: 118px;
+
     text-align: center;
 }
 
 .class-categories td img {
-    margin: .125rem;
+    margin: 0.125rem;
 }
 
 .class-categories a {
@@ -360,25 +382,31 @@ h4 {
 /* ************Special Features*********** */
 
 .float1 {
-	color: #900;
-	float: left;
-	width: 100px; 
-	height: 25px; 
-	margin: 0px 10px 10px 0px;
-	line-height: 18px; 
-	text-align: left; 
-	font-size: 22px;
-	}
+    font-size: 22px;
+    line-height: 18px;
+
+    float: left;
+
+    width: 100px;
+    height: 25px;
+    margin: 0 10px 10px 0;
+
+    text-align: left;
+
+    color: #900;
+}
 
 img.floatright {
-	float: right;
-	margin: 4px;
-	}
+    float: right;
+
+    margin: 4px;
+}
 
 img.floatleft {
-	float: left;
-	margin: 4px;
-	}
+    float: left;
+
+    margin: 4px;
+}
 
 /**
  * Utility Classes
@@ -387,30 +415,39 @@ img.floatleft {
     margin-left: 1rem;
 }
 
-.clearFloat{
+.clearFloat {
+    font-size: 0;
+    line-height: 0;
+
     clear: both;
+
     height: 0;
     margin: 0;
     padding: 0;
-    font-size: 0;
-    line-height: 0;
 }
 
 .text-screenreader {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
+
     overflow: hidden;
     clip: rect(0 0 0 0);
-    border: 0;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
     transition: height 1s;
+
+    border: 0;
 }
 #skip:focus {
-    position:static;
-    width:auto;
-    height:auto;
-    font-size: .75rem;
+    font-size: 0.75rem;
+
+    position: static;
+
+    width: auto;
+    height: auto;
+
     text-decoration: underline;
 }
