@@ -49,6 +49,7 @@ exclude:
   - gulp/
   - gulpfile.js
   - gulpfile.babel.js
+  - static/
 
 gtm_id: GTM-5BNZSL
 

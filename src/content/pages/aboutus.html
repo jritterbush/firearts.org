@@ -1,12 +1,12 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /aboutus.html
 id: about
 lead: The <strong>Fire Arts Center of Chicago</strong> began 17 years ago as a not-for-profit school for sculptors. Our primary mission is the preservation of traditional sculpture technique by offering high-quality training to artists, students and others seeking to learn or perfect their skills. Our secondary mission is to provide teaching, working, and exhibition opportunities for artists, as well as technical advice and facilities to artists and institutions.
 abouts:
     - headline: Facilities
-      text: The <strong>Fire Arts Center of Chicago</strong> has a fully equipped foundry complete with equipment for forging, welding, bronze and iron casting including furnaces and kilns. We also offer courses in stone carving, figure sculpture, figure drawing, and more. We are very excited about our new larger facility, so come <a href="#location">visit us</a> to check it out.
+      text: The <strong>Fire Arts Center of Chicago</strong> has a fully equipped foundry complete with equipment for forging, welding, bronze and iron casting including furnaces and kilns. We also offer courses in stone carving, figure sculpture, figure drawing, and more. We are very excited about our new larger facility, so come <a href="location">visit us</a> to check it out.
     - headline: Classes
       text: Regular classes are offered quarterly. As listed above our classes cover a wide range of topics including ferrous and non-ferrous casting, figure sculpture, stone carving, figure drawing, metal forging, metal furniture design, and more. Class size is kept small to provide individualized attention. New students may opt to join at the beginning of each month as the schedule allows. <a href="contact">Contact us</a> about class schedules and eligibility.
     - headline: Open Studio
@@ -16,17 +16,13 @@ abouts:
 
 ---
 
-<section id="abouts" class="section">
-    <div class="container">
-        <div class="row flex-items-xs-left">
-            {{#each abouts}}
-                <div class="col-sm-6">
-                    <h3>{{headline}}</h3>
-                    <p>{{{text}}}</p>
-                </div>
-            {{/each}}
-        </div>
-    </div>
-</section>
-
-{{> location}}
+<tr>
+    <td class="content">
+        {% for about in page.abouts %}
+            {% include abouts.html headline=about.headline text=about.text %}
+        {% endfor %}
+    </td>
+</tr>
+<tr>
+    <td align="center"><img src="{{ '/images/faccsealneg.jpg' | relative_url }}" alt="" class="reflect rheight41 ropacity42" /></td>
+</tr>
