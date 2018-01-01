@@ -3,7 +3,8 @@
         ".git/**",
         "node_modules/**",
         "bower_components/**",
-        "_site/**"
+        "_site/**",
+        "src/_sass/vendor/**"
     ],
     "remove-empty-rulesets": true,
     "always-semicolon": true,
