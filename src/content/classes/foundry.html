@@ -1,0 +1,20 @@
+---
+layout: page
+title: Foundry
+category: Classes
+id: foundry
+permalink: /foundry.html
+classes:
+    - bronze1
+
+---
+
+<tr>
+    <td class="content">
+        {% include rolling.html %}
+        {% for class in page.classes %}
+            {% include class.html class=class %}
+        {% endfor %}
+        {% include signup.html title=page.title %}
+    </td>
+</tr>

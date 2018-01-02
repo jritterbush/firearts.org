@@ -1,0 +1,32 @@
+{% assign get_class = site.data.classes[include.class] %}
+{% if get_class %}
+<div class="note">
+    <h2>{{ get_class.title }}</h2>
+    {% if get_class.image %}
+        <img src="{{ get_class.image.url | prepend: '/images/' | relative_url }}" alt="{{ get_class.image.alt }}" class="{{ get_class.image.class }}" style="{{ get_class.image.style }}">
+    {% endif %}
+    <p>
+    {% if get_class.instructors %}
+    <strong>Instructors:</strong> {{ get_class.instructors }}<br>
+    {% endif %}
+    {% if get_class.schedule %}
+        <strong>Times:</strong><br>
+        {% for time in get_class.schedule %}
+        <span class="day-{{ time | truncate: 3, '' | downcase }}">{{ time | prepend: '- ' }}</span><br>
+        {% endfor %}
+    {% endif %}
+    {% if get_class.fee %}
+        <strong>Fee:</strong> {{ get_class.fee }}
+    {% else %}
+        <strong>Fee:</strong> $400 for 16 weeks, $285 for 10 weeks
+    {% endif %}
+    </p>
+    {% if get_class.description %}
+        {% for p in get_class.description %}
+            <p>{{ p }}</p>
+        {% endfor %}
+    {% endif %}
+</div>
+{% else %}
+    <p>There was a problem accessing this class info (class id requested: {{ include.class }}</p>
+{% endif %}
