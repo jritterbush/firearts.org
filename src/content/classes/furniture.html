@@ -1,19 +1,10 @@
 ---
-layout: page
+layout: class
 title: Furniture
 category: Classes
 id: furniture
 permalink: /furniture.html
+rolling: true
 classes:
     - furniture1
 ---
-
-<tr>
-    <td class="content">
-        {% include rolling.html %}
-        {% for class in page.classes %}
-            {% include class.html class=class %}
-        {% endfor %}
-        {% include signup.html title=page.title %}
-    </td>
-</tr>

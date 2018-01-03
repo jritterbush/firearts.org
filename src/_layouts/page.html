@@ -2,16 +2,4 @@
 layout: default
 ---
 
-<table>
-    <tr>
-        <td class="pageindicator">
-            <h1>
-                {% if page.category %}
-                    {{ page.category | append: ' | ' }}
-                {% endif %}
-                {{ page.title }}
-            </h1>
-        </td>
-    </tr>
-    {{ content }}
-</table>
+{{ content }}
