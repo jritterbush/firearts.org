@@ -1,0 +1,115 @@
+main:
+    -
+      name: Home
+      class: home
+      url: /
+      subpages:
+        -
+          name: About Us
+          class: about
+          url: /aboutus.html
+        -
+          name: Location
+          class: location
+          url: /location.html
+        -
+          name: Membership
+          class: membership
+          url: /membership.html
+    -
+      name: Classes
+      class: classes
+      url: /classes.html
+      subpages:
+        -
+          name: Foundry
+          class: foundry
+          url: /foundry.html
+        -
+          name: Furniture
+          class: furniture
+          url: /furniture.html
+        -
+          name: Metal Sculpture
+          class: metal-sculpture
+          url: /msculpture.html
+        -
+          name: Stone
+          class: stone
+          url: /stone.html
+        -
+          name: Forging
+          class: forging
+          url: /forge.html
+        -
+          name: Figure Study
+          class: figure
+          url: /figure.html
+        -
+          name: Full Class List
+          class: full-list
+          url: /fulllist.html
+    -
+      name: Gallery
+      class: gallery
+      url: /gallery.html
+      subpages:
+        -
+          class: vince
+          url: /vince.html
+          name: Vince Hawkins
+        -
+          class: bryce
+          url: /bryce.html
+          name: Bryce de Reynier
+        -
+          class: kristin
+          url: /kristin.html
+          name: Kristin Komorowski
+        -
+          class: john-gruber
+          url: /john-gruber.html
+          name: John Gruber
+        -
+          class: kristian
+          url: /kristian.html
+          name: Kristian Damholt
+        -
+          class: elisotelo
+          url: /elisotelo.html
+          name: Eli Sotelo
+        -
+          class: student
+          url: /student.html
+          name: Student Work
+    -
+      name: Events
+      url: /events.html
+      class: events
+    -
+      name: Links
+      url: /links.html
+      class: links
+      subpages:
+        -
+          class: facartists
+          url: /facartists.html
+          name: Fire Arts Artists
+        -
+          class: chicagoart
+          url: /chicagoart.html
+          name: Chicago Art
+    -
+      name: Contact Us
+      url: /contactus.html
+      class: contact
+    -
+      name: Donate
+      url: /donate.html
+      class: donate
+      subpages:
+        -
+          class: wishlist
+          url: /wishlist.html
+          name: Wish List
+

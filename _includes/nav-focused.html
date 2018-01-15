@@ -1,0 +1,12 @@
+{% assign menu = site.data.navigation.main %}
+{% if menu %}
+    {% for p in menu %}
+        {% if p.class == include.subnavClass %}
+            <ul>
+            {% for sp in p.subpages %}
+                <li class="{{ sp.class }}"><a href="{{ sp.url | relative_url }}">{{ sp.name }}</a>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endfor %}
+{% endif %}
