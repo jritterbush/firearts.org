@@ -1,0 +1,23 @@
+{% assign menu = site.data.navigation.main %}
+{% if menu %}
+<nav class="navbar">
+    <a id="skip" class="text-screenreader" href="#content">Skip to content</a>
+    <ul>
+        {% for p in menu %}
+            {% unless p.hidden %}
+                <li class="{{ p.class }}"><a href="{{ p.url | relative_url }}">{{ p.name }}</a>
+                {% if p.subpages %}
+                    <ul>
+                    {% for sp in p.subpages %}
+                        {% unless sp.hidden %}
+                        <li class="{{ sp.class }}"><a href="{{ sp.url | relative_url }}">{{ sp.name }}</a>
+                        {% endunless %}
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+                </li>
+            {% endunless %}
+        {% endfor %}
+    </ul>
+</nav>
+{% endif %}

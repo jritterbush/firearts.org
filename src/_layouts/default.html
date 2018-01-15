@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+    {% include head.html %}
+
+    <body class="{{page.id}}">
+        {% include gtm.html %}
+        <div class="main" id="top">
+            <table border="0" cellpadding="0" cellspacing="0">
+
+                {% include header.html %}
+                <tr>
+                    <td>
+                        {% include navigation.html %}
+                    </td>
+                    <td id="content">
+                        <table>
+                            <tr>
+                                <td class="pageindicator">
+                                    <h1>
+                                        {% if page.category %}
+                                            {{ page.category | append: ' | ' }}
+                                        {% endif %}
+                                        {{ page.title }}
+                                    </h1>
+                                </td>
+                            </tr>
+
+                            {{ content }}
+
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            {% include footer.html %}
+
+        </div>
+    </body>
+</html>

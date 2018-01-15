@@ -1,0 +1,10 @@
+{% assign org = site.organization %}
+<footer class="footer">
+    <p>
+        {{ org.name }} | {{ org.address }} | {{ org.city }}, {{ org.state }} {{org.zip}}<br />
+        {% for phone in org.phones %}
+        Tel: {{ phone }} |
+        {% endfor %} | Email: <a href="mailto:{{ org.email }}">{{ org.email }}</a><br>
+        <a href="{{ '/sitemap.html' | relative_url }}">Sitemap</a>
+    </p>
+</footer>
