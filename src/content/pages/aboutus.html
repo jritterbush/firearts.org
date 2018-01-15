@@ -18,13 +18,6 @@ abouts:
 
 ---
 
-<tr>
-    <td class="content">
-        {% for about in page.abouts %}
-            {% include abouts.html headline=about.headline text=about.text %}
-        {% endfor %}
-    </td>
-</tr>
-<tr>
-    <td align="center"><img src="{{ '/images/faccsealneg.jpg' | relative_url }}" alt="" class="reflect rheight41 ropacity42" /></td>
-</tr>
+{% for about in page.abouts %}
+    {% include abouts.html headline=about.headline text=about.text %}
+{% endfor %}

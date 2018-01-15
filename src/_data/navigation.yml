@@ -67,9 +67,9 @@ main:
           url: /kristin.html
           name: Kristin Komorowski
         -
-          class: jon
-          url: /jon.html
-          name: Jon Gruber
+          class: john-gruber
+          url: /john-gruber.html
+          name: John Gruber
         -
           class: kristian
           url: /kristian.html
@@ -78,10 +78,6 @@ main:
           class: elisotelo
           url: /elisotelo.html
           name: Eli Sotelo
-        -
-          class: lamar
-          url: /lamar.html
-          name: Lamar Wilson
         -
           class: student
           url: /student.html
