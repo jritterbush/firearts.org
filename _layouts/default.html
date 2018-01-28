@@ -36,5 +36,10 @@
             {% include footer.html %}
 
         </div>
+        {% if page.scripts %}
+            {% for script in page.scripts %}
+                <script type="text/javascript" src="/assets/{{ script }}.js" async></script>
+            {% endfor %}
+        {% endif %}
     </body>
 </html>
