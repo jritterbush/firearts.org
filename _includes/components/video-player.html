@@ -1,0 +1,15 @@
+{% comment %}
+Video player component
+
+Embed a video player in place. Currently only supports Vimeo.
+
+Params:
+- videoId: string of characters identifying a video (only Vimeo right now)
+- width: width of player to embed (TODO: refactor to handle responsive better)
+
+Example:{% include components/video-player.html videoId='12345678' width='123' %}
+{% endcomment %}
+{% assign videoId = include.videoId | default: '21648751' %}
+{% assign width = include.width | default: '550' %}
+<div id="embed_{{ videoId }}" class="js-video-player" data-video-id="{{ videoId }}" data-video-width="{{ width }}"></div>
+<script type="text/javascript" src="/assets/video-player.js" async></script>

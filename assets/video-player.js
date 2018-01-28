@@ -1,3 +1,4 @@
+/* TODO create js utilities for this stuff */
 function ready(fn) {
     if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
         fn();
@@ -5,18 +6,32 @@ function ready(fn) {
         document.addEventListener('DOMContentLoaded', fn);
     }
 }
+/* end move to utilities */
 
-const videoUrl = '//www.vimeo.com/21648751';
-const endpoint = '//www.vimeo.com/api/oembed.json';
+const vimeoUrl = '//www.vimeo.com/';
+const endpoint = `${vimeoUrl}api/oembed.json`;
 const callback = 'embedVideo';
-const url = endpoint + '?url=' + encodeURIComponent(videoUrl) + '&callback=' + callback + '&width=550';
+
 function embedVideo(video) {
-    document.getElementById('embed').innerHTML = unescape(video.html);
+    const videoContainer = document.getElementById(`embed_${video.video_id}`);
+    if ( videoContainer ) {
+        videoContainer.innerHTML = unescape(video.html);
+    }
 }
-function init() {
+function initializeVideo(videoId, videoWidth) {
+    const width = videoWidth || '550';
+    const videoUrl = vimeoUrl + videoId;
+    const url = `${endpoint}?url=${encodeURIComponent(videoUrl)}&callback=${callback}&width=${width}`;
     const js = document.createElement('script');
     js.setAttribute('type', 'text/javascript');
     js.setAttribute('src', url);
     document.getElementsByTagName('head').item(0).appendChild(js);
 }
-ready(init);
+ready(() => {
+    const videos = document.querySelectorAll('.js-video-player');
+    Array.prototype.forEach.call(videos, video => {
+        if (video.dataset.videoId) {
+            initializeVideo(video.dataset.videoId, video.dataset.videoWidth);
+        }
+    });
+});
