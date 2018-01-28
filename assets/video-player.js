@@ -6,8 +6,8 @@ function ready(fn) {
     }
 }
 
-const videoUrl = 'http://www.vimeo.com/21648751';
-const endpoint = 'http://www.vimeo.com/api/oembed.json';
+const videoUrl = '//www.vimeo.com/21648751';
+const endpoint = '//www.vimeo.com/api/oembed.json';
 const callback = 'embedVideo';
 const url = endpoint + '?url=' + encodeURIComponent(videoUrl) + '&callback=' + callback + '&width=550';
 function embedVideo(video) {
