@@ -1,1 +1,53 @@
-/test /test2
+# General Pages
+/about              /about-us/
+/aboutus.html       /about-us/
+/location.html      /location/
+/membership.html    /membership/
+/events.html        /events/
+/contact            /contact-us/
+/contact.html       /contact-us/
+/contactus.html     /contact-us/
+/donate.html        /donate/
+/wishlist.html      /donate/wishlist/
+
+#Links
+/links.html         /links/
+/facartists.html    /links/fire-arts-artists/
+/chicagoart.html    /links/chicago-art/
+/supplies.html      /links/
+/museums.html       /links/
+/artsites.html      /links/
+
+
+# Downloads
+/FireArts_RegistrationForm.pdf          /downloads/FireArts_RegistrationForm.pdf
+/resources/VincentHawkins_Resume.pdf    /downloads/VincentHawkins_Resume.pdf
+
+# Classes
+/classes.html               /classes/
+/forge.html                 /classes/forge/
+/kids.html                  /classes/
+/foundry.html               /classes/foundry/
+/furniture.html             /classes/metal-furniture/
+/msculpture.html            /classes/metal-sculpture/
+/stone.html                 /classes/stone-carving/
+/mold.html                  /classes/foundry/
+/figure.html                /classes/figure-study/
+/fulllist.html              /classes/full-list/
+/year-intensive.html        /classes/year-intensive/
+/workshops                  /classes/year-intensive/
+/workshops.html             /classes/year-intensive/
+/FireArts_ClassSchedule.pdf /classes/
+
+# Galleries/People
+/gallery.html           /galleries/
+/vince.html             /galleries/vincent-hawkins/
+/michael.html           /galleries/
+/bryce.html             /galleries/bryce-de-reynier/
+/kristin.html           /galleries/kristin-komorowski/
+/jon.html               /galleries/john-gruber/
+/kristian.html          /galleries/kristian-damholt/
+/elisotelo.html         /galleries/eli-sotelo/
+/bouba.html             /galleries/
+/lamar.html             /galleries/
+/student.html           /galleries/student-work/
