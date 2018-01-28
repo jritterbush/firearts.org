@@ -7,109 +7,109 @@ main:
         -
           name: About Us
           class: about
-          url: /aboutus.html
+          url: /about-us/
         -
           name: Location
           class: location
-          url: /location.html
+          url: /location/
         -
           name: Membership
           class: membership
-          url: /membership.html
+          url: /membership/
     -
       name: Classes
       class: classes
-      url: /classes.html
+      url: /classes/
       subpages:
         -
           name: Foundry
           class: foundry
-          url: /foundry.html
+          url: /classes/foundry/
         -
           name: Furniture
           class: furniture
-          url: /furniture.html
+          url: /classes/metal-furniture/
         -
           name: Metal Sculpture
           class: metal-sculpture
-          url: /msculpture.html
+          url: /classes/metal-sculpture/
         -
           name: Stone
           class: stone
-          url: /stone.html
+          url: /classes/stone-carving/
         -
           name: Forging
           class: forging
-          url: /forge.html
+          url: /classes/forge/
         -
           name: Figure Study
           class: figure
-          url: /figure.html
+          url: /classes/figure-study/
         -
           name: Full Class List
           class: full-list
-          url: /fulllist.html
+          url: /classes/full-list/
     -
       name: Gallery
       class: gallery
-      url: /gallery.html
+      url: /galleries/
       subpages:
         -
           class: vince
-          url: /vince.html
+          url: /galleries/vincent-hawkins/
           name: Vince Hawkins
         -
           class: bryce
-          url: /bryce.html
+          url: /galleries/bryce-de-reynier/
           name: Bryce de Reynier
         -
           class: kristin
-          url: /kristin.html
+          url: /galleries/kristin-komorowski/
           name: Kristin Komorowski
         -
           class: john-gruber
-          url: /john-gruber.html
+          url: /galleries/john-gruber/
           name: John Gruber
         -
           class: kristian
-          url: /kristian.html
+          url: /galleries/kristian-damholt/
           name: Kristian Damholt
         -
           class: elisotelo
-          url: /elisotelo.html
+          url: /galleries/elisotelo/
           name: Eli Sotelo
         -
           class: student
-          url: /student.html
+          url: /galleries/student-work/
           name: Student Work
     -
       name: Events
-      url: /events.html
+      url: /events/
       class: events
     -
       name: Links
-      url: /links.html
+      url: /links/
       class: links
       subpages:
         -
           class: facartists
-          url: /facartists.html
+          url: /links/fire-arts-artists/
           name: Fire Arts Artists
         -
           class: chicagoart
-          url: /chicagoart.html
+          url: /links/chicago-art/
           name: Chicago Art
     -
       name: Contact Us
-      url: /contactus.html
+      url: /contact-us/
       class: contact
     -
       name: Donate
-      url: /donate.html
+      url: /donate/
       class: donate
       subpages:
         -
           class: wishlist
-          url: /wishlist.html
+          url: /donate/wishlist/
           name: Wish List
 

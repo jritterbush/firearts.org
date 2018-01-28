@@ -28,7 +28,7 @@ timezone: America/Chicago
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
+  - jekyll-sitemap
 
 include:
   - _redirects
