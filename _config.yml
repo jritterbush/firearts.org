@@ -33,6 +33,9 @@ plugins:
 include:
   - _redirects
 
+sass:
+    style: compressed
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -65,3 +68,4 @@ organization:
         - 773.544.9908
         - 312.842.2027
     email: info@firearts.org
+    founded: 1997-04-04
