@@ -27,9 +27,8 @@ timezone: America/Chicago
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-sitemap
-
+# plugins:
+#   - plugin-name
 include:
   - _redirects
 
@@ -55,6 +54,7 @@ exclude:
   - gulpfile.js
   - gulpfile.babel.js
   - static/
+  - netlify.toml
 
 gtm_id: GTM-5BNZSL
 

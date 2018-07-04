@@ -1,0 +1,13 @@
+---
+layout: null
+permalink: /robots.txt
+---
+{% if jekyll.environment != 'production' %}
+User-agent: *
+Disallow: /
+{% endif %}
+
+{% comment %}
+For not block all search engine traffic to any page, but eventually
+block it on any non-production with:
+{% endcomment %}
