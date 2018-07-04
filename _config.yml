@@ -54,6 +54,7 @@ exclude:
   - gulpfile.js
   - gulpfile.babel.js
   - static/
+  - netlify.toml
 
 gtm_id: GTM-5BNZSL
 
