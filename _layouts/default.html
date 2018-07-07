@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html amp lang="{{ page.lang | default: site.lang | default: "en" }}">
 
     {% include head.html %}
 
@@ -36,10 +36,5 @@
             {% include footer.html %}
 
         </div>
-        {% if page.scripts %}
-            {% for script in page.scripts %}
-                <script type="text/javascript" src="/assets/{{ script }}.js" async></script>
-            {% endfor %}
-        {% endif %}
     </body>
 </html>
