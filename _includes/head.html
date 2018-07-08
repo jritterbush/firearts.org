@@ -2,8 +2,10 @@
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-    {% if page.hasVimeo %}
-    <script async custom-element="amp-vimeo" src="https://cdn.ampproject.org/v0/amp-vimeo-0.1.js"></script>
+    {% if page.amp %}
+    {% for amp in page.amp %}
+    <script async custom-element="{{ amp.element }}" src="{{ amp.script }}"></script>
+    {% endfor %}
     {% endif %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
