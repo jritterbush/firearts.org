@@ -6,8 +6,9 @@ bronze1:
     - 'Saturdays 3:00&ndash;6:00pm'
   image:
     url: found1.jpg
-    style: 'margin-right: 10px'
     class: floatleft
+    width: 140
+    height: 187
     alt: Bronze Sculpture Casting at the Fire Arts Center
   description:
     -
@@ -29,9 +30,10 @@ msculpture1:
     title: Beginning Metal Sculpture
     image:
       url: ms.jpg
-      style: 'margin-left: 10px'
       class: floatright
       alt: Metal Sculpture/Fabrication at the Fire Arts Center
+      width: 140
+      height: 171
     schedule:
       - Wednesday 10:00am&ndash;1:00pm &amp; 7:00pm&ndash;10:00pm
     description:
@@ -74,8 +76,9 @@ figure1:
     image:
         url: "figure-sculpture2.jpg"
         class: floatleft
-        style: 'margin-right:10px;'
-        alt: 'Figure Sculpture at the Fire Arts Center'
+        alt: 'Fire Arts Center Figure Sculpture student sculpting in clay'
+        width: 200
+        height: 172
     schedule:
         - Saturday 10:00am&ndash;1:00pm
         - Monday 6:30pm&ndash;9:30pm
