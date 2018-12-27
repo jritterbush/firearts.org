@@ -4,12 +4,10 @@
   "description": "Fire Arts Center of Chicago organization website",
   "main": "index.js",
   "scripts": {
-    "gulp": "./node_modules/gulp/bin/gulp.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "JEKYLL_ENV=production bundle exec jekyll build",
-    "build:development": "bundle exec jekyll build",
+    "build": "JEKYLL_ENV=production gulp build",
     "build:staging": "JEKYLL_ENV=staging bundle exec jekyll build",
-    "develop": "bundle exec jekyll serve"
+    "develop": "gulp"
   },
   "repository": {
     "type": "git",
@@ -22,8 +20,10 @@
   },
   "homepage": "https://github.com/jritterbush/fire-arts#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
-    "gulp-rename": "^1.4.0"
+    "gulp-rename": "^1.4.0",
+    "gulp-util": "^3.0.8"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
