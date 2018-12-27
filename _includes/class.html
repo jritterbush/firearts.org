@@ -3,7 +3,8 @@
 <div class="note">
     <h2>{{ get_class.title }}</h2>
     {% if get_class.image %}
-        <img src="{{ get_class.image.url | prepend: '/images/' | relative_url }}" alt="{{ get_class.image.alt }}" class="{{ get_class.image.class }}" style="{{ get_class.image.style }}">
+    {% assign imageSrc = get_class.image.url | prepend: 'images/' %}
+    {% include image.html src=imageSrc width=get_class.image.width height=get_class.image.height layout='fixed' class=get_class.image.class alt=get_class.image.alt %}
     {% endif %}
     <p>
     {% if get_class.instructors %}

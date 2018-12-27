@@ -76,7 +76,7 @@ main:
           name: Kristian Damholt
         -
           class: elisotelo
-          url: /galleries/elisotelo/
+          url: /galleries/eli-sotelo/
           name: Eli Sotelo
         -
           class: student
@@ -112,4 +112,9 @@ main:
           class: wishlist
           url: /donate/wishlist/
           name: Wish List
+    -
+      name: Register
+      class: register
+      linkClasses: button button--primary mt1
+      url: /register/
 

@@ -1,4 +1,12 @@
 <tr>
-    <td class="leftheader"><a href="{{ '/' | relative_url }}"><img src="{{ '/images/vitruvianman.jpg' | relative_url }}" title="Fire Arts Center of Chicago | metal sculpture and design" alt="Fire Arts Center of Chicago | metal sculpture and design"></a></td>
-    <td class="banner"><a href="{{ '/' | relative_url }}"><img src="{{ '/images/banner.jpg' | relative_url }}" title="Fire Arts Center of Chicago | metal sculpture and design" alt="Fire Arts Center of Chicago | metal sculpture and design"></a></td>
+    <td class="leftheader">
+        <a href="{{ '/' | relative_url }}">
+            {% include image.html src='images/vitruvianman.jpg' alt='Fire Arts Center of Chicago logo' width='133' height='137' layout='fixed' %}
+        </a>
+    </td>
+    <td class="banner">
+        <a href="{{ '/' | relative_url }}">
+            {% include image.html src='images/banner.jpg' alt='Students at the Fire Arts Center wearing protective equipment pouring bronze' width='594' height='137' layout='fixed' %}
+        </a>
+    </td>
 </tr>

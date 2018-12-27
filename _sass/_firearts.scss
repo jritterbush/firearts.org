@@ -1,2 +1,28 @@
 @import 'vendor/normalize';
 @import 'style';
+
+.button {
+    display: inline-block;
+    padding: .75rem 2rem;
+}
+
+.button--primary {
+    background-color: #900;
+    color: #fff;
+    &:focus,
+    &:hover {
+        background-color: darken(#900, 5%);
+        color: #fff;
+    }
+}
+
+
+.mt1 {
+    margin-top: .75rem;
+}
+
+/**
+* Override some specificity for now
+* TODO: get rid of this mess with utilities
+*/
+

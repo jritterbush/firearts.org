@@ -10,6 +10,7 @@ Params:
 Example:{% include components/video-player.html videoId='12345678' width='123' %}
 {% endcomment %}
 {% assign videoId = include.videoId | default: '21648751' %}
-{% assign width = include.width | default: '550' %}
-<div id="embed_{{ videoId }}" class="js-video-player" data-video-id="{{ videoId }}" data-video-width="{{ width }}"></div>
-<script type="text/javascript" src="/assets/video-player.js" async></script>
+{% assign width = include.width | default: '640' %}
+{% assign height = include.height | default: '360' %}
+{% assign layout = include.layout | default: 'responsive' %}
+<amp-vimeo data-videoid="{{videoId}}" layout="{{layout}}" width="{{width}}" height="{{height}}"></amp-vimeo>
