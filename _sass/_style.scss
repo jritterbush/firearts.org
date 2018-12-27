@@ -246,15 +246,15 @@ a:hover {
     content: '\203A';
 }
 
-.navbar a {
+.navbar a:not(.button) {
     text-align: right;
     text-decoration: none;
 
     color: #adadad;
 }
 
-.navbar li a:hover::after,
-.navbar li a:focus::after {
+.navbar li a:not(.button):hover::after,
+.navbar li a:not(.button):focus::after {
     padding-left: 0.25rem;
 
     content: '\203A';

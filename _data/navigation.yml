@@ -112,4 +112,9 @@ main:
           class: wishlist
           url: /donate/wishlist/
           name: Wish List
+    -
+      name: Register
+      class: register
+      linkClasses: button button--primary mt1
+      url: /register/
 

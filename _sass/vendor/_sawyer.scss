@@ -1,0 +1,19 @@
+/*
+* Sawyer widget shit
+* TODO: move this so it only loads on register
+*/
+html,
+body {
+    -webkit-overflow-scrolling: touch !important;
+    overflow: auto !important;
+    height: 100% !important;
+}
+.sawyer-scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+}
+@media only screen and (max-width: 35.5em) {
+    .sawyer_frame {
+        width: 90vw
+    }
+}
