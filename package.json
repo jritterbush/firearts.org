@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/jritterbush/fire-arts#readme",
   "devDependencies": {
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-rename": "^1.2.2"
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0"
   },
   "dependencies": {
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^8.0.1"
   }
 }
