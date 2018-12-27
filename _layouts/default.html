@@ -21,7 +21,11 @@
                                         {% if page.category %}
                                             {{ page.category | append: ' | ' }}
                                         {% endif %}
-                                        {{ page.title }}
+                                        {% if page.title %}
+                                            {{ page.title }}
+                                        {% else %}
+                                            Fire Arts Center of Chicago
+                                        {% endif %}
                                     </h1>
                                 </td>
                             </tr>

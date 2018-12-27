@@ -9,6 +9,7 @@
 .button--primary {
     background-color: #900;
     color: #fff;
+    &:focus,
     &:hover {
         background-color: darken(#900, 5%);
         color: #fff;
