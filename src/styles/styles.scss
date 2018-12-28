@@ -1,3 +1,7 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
 /*
  * fac.css
  */
@@ -9,8 +13,8 @@ body {
     font-size: 16px;
     line-height: 1.25;
 
-    color: #c9c9c9;
-    background-color: #222;
+    color: config('colors.grey');
+    background-color: config('colors.black-light');
 }
 
 *,
@@ -24,7 +28,7 @@ p + p {
 }
 
 p strong {
-    color: #fff;
+    color: config('colors.white');
 }
 
 td {
@@ -35,7 +39,6 @@ td {
 
 .main {
     width: 755px;
-    margin: 1rem auto;
 }
 
 .leftheader {
@@ -79,9 +82,8 @@ td {
 
 .pageindicator {
     padding: 0.5rem 1rem;
-
     border-radius: 3px;
-    background-color: #900;
+    background-color: config('colors.fac-red');
 }
 
 .footer {
@@ -99,16 +101,16 @@ a {
 
     text-decoration: none;
 
-    color: #fff;
+    color: config('colors.white');
     border-bottom: 1px dotted #ededed;
 }
 
 a:visited {
-    color: #fff;
+    color: config('colors.white');
 }
 
 a:active {
-    color: #fff;
+    color: config('colors.white');
 }
 
 a:focus,
@@ -210,7 +212,7 @@ a:hover {
 .donate .navbar .donate > a {
     cursor: default;
 
-    color: #fff;
+    color: config('colors.white');
 }
 
 .home .navbar .home > a::after,
@@ -282,7 +284,7 @@ h5,
 h6 {
     font-weight: normal;
 
-    color: #fff;
+    color: config('colors.white');
 }
 
 h2,
@@ -306,7 +308,7 @@ h2 {
 h2.section-head {
     margin-top: 50px;
 
-    border-bottom: 1px solid #900;
+    border-bottom: 1px solid config('colors.fac-red');
 }
 
 h3 {
@@ -343,13 +345,13 @@ h4 {
     font-weight: bold;
     font-style: italic;
 
-    color: #900;
+    color: config('colors.fac-red');
 }
 
 .emphasis {
     font-style: italic;
 
-    color: #900;
+    color: config('colors.fac-red');
 }
 
 /* ************Classes*********** */
@@ -397,7 +399,7 @@ h4 {
 
     text-align: left;
 
-    color: #900;
+    color: config('colors.fac-red');
 }
 
 .floatright {
@@ -461,4 +463,23 @@ h4 {
     height: auto;
 
     text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    padding: .75rem 2rem;
+}
+
+.button--primary {
+    background-color: config('colors.fac-red');
+    color: config('colors.white');
+    &:focus,
+    &:hover {
+        background-color: color(config('colors.fac-red') shade(20%));
+        color: config('colors.white');
+    }
+}
+
+.mt1 {
+    margin-top: .75rem;
 }

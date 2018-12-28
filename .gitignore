@@ -6,3 +6,6 @@ node_modules
 _site
 .sass-cache
 .jekyll-metadata
+
+# Don't track the temp stylesheet
+_includes/styles.css
