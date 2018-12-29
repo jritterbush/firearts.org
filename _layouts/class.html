@@ -2,20 +2,15 @@
 layout: default
 ---
 
-<tr>
-    <td class="content">
+{{ content }}
 
-        {{ content }}
-
-        {% if page.rolling %}
-            {% include rolling.html %}
-        {% endif %}
-        {% for class in page.classes %}
-            {% include class.html class=class %}
-        {% endfor %}
-        {% if page.classes_by_day %}
-            {% include classes-by-day.html %}
-        {% endif %}
-        {% include signup.html title=page.title %}
-    </td>
-</tr>
+{% if page.rolling %}
+    {% include rolling.html %}
+{% endif %}
+{% for class in page.classes %}
+    {% include class.html class=class %}
+{% endfor %}
+{% if page.classes_by_day %}
+    {% include classes-by-day.html %}
+{% endif %}
+{% include signup.html title=page.title %}

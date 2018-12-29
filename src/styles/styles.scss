@@ -6,15 +6,11 @@
  * fac.css
  */
 
-/* **************General Page**************** */
+/* ************** Base Styles **************** */
 
 body {
-    font-family: 'Futura Lt BT', arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
-
-    color: config('colors.grey');
-    background-color: config('colors.black-light');
 }
 
 *,
@@ -31,67 +27,36 @@ p strong {
     color: config('colors.white');
 }
 
-td {
-    vertical-align: top;
+/* ************** Grid *************** */
+
+.container {
+    max-width: 50rem;
 }
 
-/* **************Table Cell Properties*************** */
-
-.main {
-    width: 755px;
+.grid {
+    display: grid;
 }
 
-.leftheader {
-    width: 137px;
-    padding-right: 20px;
-
-    text-align: center;
+.grid-main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
 }
 
-.banner {
-    width: 598px;
+header,
+footer {
+    grid-column: 1 / span 5;
 }
 
-.leftheader a,
-.banner a {
-    display: block;
+main {
+    grid-column: 2 / span 3;
 }
 
-#content > table {
-    width: 100%;
-}
-
-.content {
-    padding: 1rem;
+aside {
+    grid-column: 1;
 }
 
 .note {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-
-    border-bottom: 1px dotted #ededed;
-}
-
-.leftheader amp-img {
-    margin: 2px;
-}
-
-.banner amp-img {
-    margin: 2px;
-}
-
-.pageindicator {
-    padding: 0.5rem 1rem;
-    border-radius: 3px;
-    background-color: config('colors.fac-red');
-}
-
-.footer {
-    font-size: 0.75rem;
-
-    padding: 3rem 0 1rem;
-
-    border-top: 1px solid #333;
+    @apply border-dotted border-grey-lighter mb-4 pb-4;
 }
 
 /* *************Links************** */
@@ -119,9 +84,6 @@ a:hover {
     border-bottom: 1px solid #f90;
 }
 
-.leftheader a,
-.banner a,
-.navbar a,
 .class-categories a {
     border-bottom: none;
 }
@@ -292,125 +254,33 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 1rem 0;
+    @apply my-4 mx-0;
 }
 
 h1 {
-    font-size: 2rem;
-
-    margin: 0;
+    @apply text-3xl;
 }
 
 h2 {
-    font-size: 1.75rem;
-}
-
-h2.section-head {
-    margin-top: 50px;
-
-    border-bottom: 1px solid config('colors.fac-red');
+    @apply text-2xl;
 }
 
 h3 {
-    font-size: 1.5rem;
+    @apply text-xl;
 }
 
 h4 {
-    font-size: 1.25rem;
-}
-
-.date {
-    font-size: 75%;
-}
-
-.tiny {
-    font-size: 75%;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.backtotop {
-    font-size: 80%;
-
-    text-decoration: underline;
-}
-
-.formindent {
-    margin-left: 25px;
-}
-
-.requiredfields {
-    font-weight: bold;
-    font-style: italic;
-
-    color: config('colors.fac-red');
-}
-
-.emphasis {
-    font-style: italic;
-
-    color: config('colors.fac-red');
+    @apply text-lg;
 }
 
 /* ************Classes*********** */
 
-.class-categories {
-    width: 100%;
-}
-
-.class-categories td {
-    width: 100px;
-    height: 100px;
-
-    text-align: center;
-}
-
-.class-categories td amp-img {
-    display: block;
-
-    max-width: 100%;
-}
-
 .class-categories a {
     display: block;
-
     padding-bottom: 0;
 }
 
-.class-categories td a:focus,
-.class-categories td a:hover {
-    outline: 3px solid #f00;
-}
-
-
 /* ************Special Features*********** */
-
-.float1 {
-    font-size: 22px;
-    line-height: 18px;
-
-    float: left;
-
-    width: 100px;
-    height: 25px;
-    margin: 0 10px 10px 0;
-
-    text-align: left;
-
-    color: config('colors.fac-red');
-}
-
-.floatright {
-    float: right;
-    margin: 4px 4px 4px 10px;
-}
-
-.floatleft {
-    float: left;
-    margin: 4px 10px 4px 4px;
-}
 
 .columns2 {
     -moz-column-count: 2;
@@ -419,24 +289,6 @@ h4 {
     .gallery {
         break-after: column;
     }
-}
-
-/**
- * Utility Classes
- */
-.margin-left-1 {
-    margin-left: 1rem;
-}
-
-.clearFloat {
-    font-size: 0;
-    line-height: 0;
-
-    clear: both;
-
-    height: 0;
-    margin: 0;
-    padding: 0;
 }
 
 .text-screenreader {
@@ -478,8 +330,4 @@ h4 {
         background-color: color(config('colors.fac-red') shade(20%));
         color: config('colors.white');
     }
-}
-
-.mt1 {
-    margin-top: .75rem;
 }

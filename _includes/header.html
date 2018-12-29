@@ -1,12 +1,7 @@
-<tr>
-    <td class="leftheader">
-        <a href="{{ '/' | relative_url }}">
-            {% include image.html src='images/vitruvianman.jpg' alt='Fire Arts Center of Chicago logo' width='133' height='137' layout='fixed' %}
-        </a>
-    </td>
-    <td class="banner">
-        <a href="{{ '/' | relative_url }}">
-            {% include image.html src='images/banner.jpg' alt='Students at the Fire Arts Center wearing protective equipment pouring bronze' width='594' height='137' layout='fixed' %}
-        </a>
-    </td>
-</tr>
+<header class="flex">
+    <a class="block border-b-0 hover:border-b-0 focus:border-b-0" href="{{ '/' | relative_url }}">
+        {% include image.html src='images/da-vinci-vitruvian-man-opt.png' alt='Fire Arts Center of Chicago logo' width='150' height='150' layout='intrinsic' %}
+        <!-- <p class="text&#45;right">Fire Arts Center of Chicago</p> -->
+    </a>
+    {% include image.html src='images/banner.jpg' alt='Students at the Fire Arts Center wearing protective equipment pouring bronze' width='594' height='137' layout='intrinsic' %}
+</header>

@@ -3,42 +3,27 @@
 
     {% include head.html %}
 
-    <body class="{{page.id}}">
-        {% include gtm.html %}
-        <div class="main" id="top">
-            <table border="0" cellpadding="0" cellspacing="0">
-
-                {% include header.html %}
-                <tr>
-                    <td>
-                        {% include navigation.html %}
-                    </td>
-                    <td id="content">
-                        <table>
-                            <tr>
-                                <td class="pageindicator">
-                                    <h1>
-                                        {% if page.category %}
-                                            {{ page.category | append: ' | ' }}
-                                        {% endif %}
-                                        {% if page.title %}
-                                            {{ page.title }}
-                                        {% else %}
-                                            Fire Arts Center of Chicago
-                                        {% endif %}
-                                    </h1>
-                                </td>
-                            </tr>
-
-                            {{ content }}
-
-                        </table>
-                    </td>
-                </tr>
-            </table>
-
+    <body class="{{page.id}} bg-black-light font-sans text-grey">
+        <div id="top" class="container grid grid-main my-4 mx-auto">
+            {% include gtm.html %}
+            {% include header.html %}
+            <aside>
+                {% include navigation.html %}
+            </aside>
+            <main id="content">
+                <h1 class="bg-fac-red m-0 py-2 px-4 rounded-sm">
+                    {% if page.category %}
+                        {{ page.category | append: ' | ' }}
+                    {% endif %}
+                    {% if page.title %}
+                        {{ page.title }}
+                    {% else %}
+                        Fire Arts Center of Chicago
+                    {% endif %}
+                </h1>
+                {{ content }}
+            </main>
             {% include footer.html %}
-
         </div>
     </body>
 </html>
