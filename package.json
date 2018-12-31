@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "JEKYLL_ENV=production gulp build",
-    "build:staging": "JEKYLL_ENV=staging bundle exec jekyll build",
+    "build:staging": "JEKYLL_ENV=staging gulp build",
     "develop": "gulp"
   },
   "repository": {
@@ -23,9 +23,11 @@
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-postcss": "^8.0.0",
+    "gulp-purgecss": "^1.1.1",
     "gulp-rename": "^1.4.0",
     "gulp-util": "^3.0.8",
     "lodash": "^4.17.11",
+    "postcss-clean": "^1.1.0",
     "postcss-color-function": "^4.0.1",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.1.1",
