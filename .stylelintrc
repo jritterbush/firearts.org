@@ -7,7 +7,6 @@
   "rules": {
     "indentation": 4,
     "string-quotes": "single",
-    "at-rule-no-unknown": ["tailwind", "apply"],
     "selector-type-no-unknown": ["/^amp-/"]
   }
 }
