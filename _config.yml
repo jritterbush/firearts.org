@@ -41,29 +41,25 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
   - package.json
   - yarn.lock
   - gulp/
   - gulpfile.js
-  - gulpfile.babel.js
   - static/
   - netlify.toml
   - tailwind.config.js
+  - src/
 
 gtm_id: GTM-5BNZSL
 
 organization:
-    name: Fire Arts Center of Chicago
-    address: 1830 N Kostner
-    city: Chicago
-    state: IL
-    zip: 60639
-    phones:
-        - 773.544.9908
-        - 312.842.2027
-    email: info@firearts.org
-    founded: 1997-04-04
+  name: Fire Arts Center of Chicago
+  address: 1830 N Kostner
+  city: Chicago
+  state: IL
+  zip: 60639
+  phones:
+    - 773.544.9908
+    - 312.842.2027
+  email: info@firearts.org
+  founded: 1997-04-04
