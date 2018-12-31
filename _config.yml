@@ -52,6 +52,7 @@ exclude:
   - gulpfile.babel.js
   - static/
   - netlify.toml
+  - tailwind.config.js
 
 gtm_id: GTM-5BNZSL
 
