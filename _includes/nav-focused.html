@@ -2,7 +2,7 @@
 {% if menu %}
     {% for p in menu %}
         {% if p.class == include.subnavClass %}
-            <ul>
+            <ul class="{{ include.class }}">
             {% for sp in p.subpages %}
                 <li class="{{ sp.class }}"><a href="{{ sp.url | relative_url }}">{{ sp.name }}</a>
             {% endfor %}

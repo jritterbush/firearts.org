@@ -1,5 +1,5 @@
 {% for day in page.classes_by_day %}
-    <h2 id="saturday" style="border-bottom: 1px solid #f00;">{{ day.name }}</h2>
+    <h2 id="{{ day.name | downcase }}" class="border-b border-fac-red">{{ day.name }}</h2>
     {% for class in day.classes %}
         {% include class.html class=class %}
     {% endfor %}

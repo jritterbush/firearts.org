@@ -1,0 +1,274 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * fac.css
+ */
+
+/* ************** Base Styles **************** */
+
+html {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-size: config('baseTextSize');
+    line-height: 1.3333;
+    scroll-behavior: smooth;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+
+/* ************** Grid *************** */
+
+.container {
+    max-width: 50rem;
+}
+
+@supports (display: grid) {
+    .grid {
+        display: grid;
+    }
+    .grid-classes {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-auto-rows: minmax(150px, auto);
+        grid-gap: 1em;
+    }
+    @media screen and (min-width: 769px) {
+
+        .grid-main {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1em;
+        }
+
+        header,
+        footer {
+            grid-column: 1 / span 5;
+        }
+
+        main {
+            grid-column: 2 / span 3;
+        }
+
+        aside {
+            grid-column: 1;
+        }
+
+        .grid-header {
+            align-items: center;
+            grid-template-columns: repeat(4, 1fr);
+            & > a {
+                grid-column: 4;
+            }
+            & > amp-img {
+                grid-column: 1 / span 3;
+            }
+            & > h1 {
+                grid-column: 1 / span 5;
+            }
+        }
+    }
+}
+
+.note {
+    @apply border-b border-dotted border-grey-lighter mb-4 pb-4;
+}
+
+/* ******** Typography ********** */
+
+h1,
+h2,
+h3,
+h4 {
+    @apply text-white my-4;
+}
+
+h1 {
+    @apply text-4xl font-semibold;
+}
+
+h2 {
+    @apply text-3xl;
+}
+
+h3 {
+    @apply text-2xl;
+}
+
+h4 {
+    @apply text-xl;
+}
+
+p {
+    @apply text-lg;
+}
+
+li + li {
+    @apply mt-2;
+}
+
+* + p {
+    @apply mt-4;
+}
+
+p strong {
+    @apply text-white;
+}
+
+/* ************* Links ************** */
+
+a {
+    @apply border-b border-dotted border-grey-lighter no-underline pb-sm text-white;
+    &:focus,
+    &:hover {
+        @apply border-b border-solid border-fac-orange text-fac-orange;
+    }
+}
+
+/* ************* Naviation ************** */
+
+.register .navbar .register {
+    @apply hidden;
+}
+
+.home .navbar .home ul,
+.about .navbar .home ul,
+.location .navbar .home ul,
+.membership .navbar .home ul,
+.classes .navbar .classes ul,
+.foundry .navbar .classes ul,
+.furniture .navbar .classes ul,
+.metal-sculpture .navbar .classes ul,
+.stone .navbar .classes ul,
+.forging .navbar .classes ul,
+.figure .navbar .classes ul,
+.full-list .navbar .classes ul,
+.gallery .navbar .gallery ul,
+.vince .navbar .gallery ul,
+.bryce .navbar .gallery ul,
+.kristin .navbar .gallery ul,
+.john-gruber .navbar .gallery ul,
+.kristian .navbar .gallery ul,
+.elisotelo .navbar .gallery ul,
+.student .navbar .gallery ul,
+.links .navbar .links ul,
+.facartists .navbar .links ul,
+.chicagoart .navbar .links ul,
+.wishlist .navbar .donate ul,
+.donate .navbar .donate ul {
+    @apply block;
+}
+
+.home .navbar .home > a,
+.about .navbar .about > a,
+.location .navbar .location > a,
+.membership .navbar .membership > a,
+.classes .navbar .classes > a,
+.foundry .navbar .foundry > a,
+.furniture .navbar .furniture > a,
+.metal-sculpture .navbar .metal-sculpture > a,
+.stone .navbar .stone > a,
+.forging .navbar .forging > a,
+.figure .navbar .figure > a,
+.full-list .navbar .full-list > a,
+.gallery .navbar .gallery > a,
+.vince .navbar .vince > a,
+.bryce .navbar .bryce > a,
+.kristin .navbar .kristin > a,
+.john-gruber .navbar .john-gruber > a,
+.kristian .navbar .kristian > a,
+.elisotelo .navbar .elisotelo > a,
+.student .navbar .student > a,
+.events .navbar .events > a,
+.links .navbar .links > a,
+.facartists .navbar .facartists > a,
+.chicagoart .navbar .chicagoart > a,
+.contact .navbar .contact > a,
+.wishlist .navbar .wishlist > a,
+.donate .navbar .donate > a {
+    @apply cursor-default text-white;
+}
+
+.home .navbar .home > a::after,
+.about .navbar .about > a::after,
+.location .navbar .location > a::after,
+.membership .navbar .membership > a::after,
+.classes .navbar .classes > a::after,
+.foundry .navbar .foundry > a::after,
+.furniture .navbar .furniture > a::after,
+.metal-sculpture .navbar .metal-sculpture > a::after,
+.stone .navbar .stone > a::after,
+.forging .navbar .forging > a::after,
+.figure .navbar .figure > a::after,
+.full-list .navbar .full-list > a::after,
+.gallery .navbar .gallery > a::after,
+.vince .navbar .vince > a::after,
+.bryce .navbar .bryce > a::after,
+.kristin .navbar .kristin > a::after,
+.john-gruber .navbar .john-gruber > a::after,
+.kristian .navbar .kristian > a::after,
+.elisotelo .navbar .elisotelo > a::after,
+.student .navbar .student > a::after,
+.events .navbar .events > a::after,
+.links .navbar .links > a::after,
+.facartists .navbar .facartists > a::after,
+.chicagoart .navbar .chicagoart > a::after,
+.contact .navbar .contact > a::after,
+.wishlist .navbar .wishlist > a::after,
+.donate .navbar .donate > a::after {
+    @apply pl-1;
+    content: '\203A';
+}
+
+.navbar li a:not(.button):hover::after,
+.navbar li a:not(.button):focus::after {
+    @apply pl-1;
+    content: '\203A';
+}
+
+
+/* ************ Additional Utilities *********** */
+
+.columns2 {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    .gallery {
+        break-after: column;
+    }
+}
+
+.text-screenreader {
+    @apply absolute border-0 h-px overflow-hidden -m-px p-0 w-px;
+    clip: rect(0 0 0 0);
+    transition: height 1s;
+}
+
+#skip:focus {
+    @apply h-auto static text-xs w-auto;
+}
+
+.button {
+    @apply border-b-0 font-semibold inline-block px-8 py-3 no-underline;
+    &:focus,
+    &:hover {
+        @apply border-b-0;
+    }
+}
+
+.button--primary {
+    @apply bg-fac-red text-white;
+    &:focus,
+    &:hover {
+        background-color: color(config('colors.fac-red') shade(20%));
+        color: config('colors.white');
+    }
+}

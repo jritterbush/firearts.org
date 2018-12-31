@@ -3,42 +3,17 @@
 
     {% include head.html %}
 
-    <body class="{{page.id}}">
+    <body class="{{page.id}} bg-black-light font-sans text-grey">
         {% include gtm.html %}
-        <div class="main" id="top">
-            <table border="0" cellpadding="0" cellspacing="0">
-
-                {% include header.html %}
-                <tr>
-                    <td>
-                        {% include navigation.html %}
-                    </td>
-                    <td id="content">
-                        <table>
-                            <tr>
-                                <td class="pageindicator">
-                                    <h1>
-                                        {% if page.category %}
-                                            {{ page.category | append: ' | ' }}
-                                        {% endif %}
-                                        {% if page.title %}
-                                            {{ page.title }}
-                                        {% else %}
-                                            Fire Arts Center of Chicago
-                                        {% endif %}
-                                    </h1>
-                                </td>
-                            </tr>
-
-                            {{ content }}
-
-                        </table>
-                    </td>
-                </tr>
-            </table>
-
-            {% include footer.html %}
-
+        <div id="top" class="container grid grid-main mx-auto">
+            {% include header.html %}
+            <aside>
+                {% include navigation.html %}
+            </aside>
+            <main id="content" class="px-4 sm:py-4 md:py-4">
+                {{ content }}
+            </main>
         </div>
+        {% include footer.html %}
     </body>
 </html>

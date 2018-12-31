@@ -14,10 +14,11 @@ amp:
 <p>The entrance is behind the building on Cortland and Kenneth. Call us if you have any problems getting in {% for phone in site.organization.phones %}{{ phone }}{% if forloop.last != true %} or {% endif %}{% endfor %}.</p>
 
 <amp-iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.9864503486756!2d-87.73625299999999!3d41.914649999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd24099688cbf%3A0xcd3e91ca38693007!2sFire+Arts+Center+of+Chicago!5e0!3m2!1sen!2sus!4v1516059893114"
-    width="590"
+    width="550"
     height="350"
     frameborder="0"
     sandbox="allow-scripts allow-same-origin"
+    class="mt-4"
     allowfullscreen>
     <amp-img alt="Map of the Fire Arts Center of Chicago"
         src="{{ '/images/map-fire-arts-center.png' | relative_url }}"

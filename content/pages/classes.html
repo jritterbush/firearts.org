@@ -6,51 +6,20 @@ title: Classes
 excerpt: The Fire Arts Center of Chicago offers classes for all ages and experience levels.
 ---
 
-<table class="class-categories">
-    <tr>
-        <td class="content">
-            <a href="{{ '/classes/full-list/' | relative_url }}">
-                {% include image.html src='images/faccsealsm.jpg' alt='' width='114' height='114' layout='fixed' %}
-                <h2 class="text-screenreader">Full Class List</h2>
-            </a>
-        </td>
-        <td class="content">
-            <a href="{{ '/classes/metal-furniture/' | relative_url }}">
-                {% include image.html src='images/furnituresm.jpg' alt='' width='114' height='114' layout='fixed' %}
-                <h2 class="text-screenreader">Furniture Design Classes</h2>
-            </a>
-        </td>
-        <td class="content">
-            <a href="{{ '/classes/forge/' | relative_url }}">
-                {% include image.html src='images/forgesm.jpg' alt='' width='114' height='114' layout='fixed' %}
-                <h2 class="text-screenreader">Forging Classes</h2>
-            </a>
-        </td>
-        <td class="content">
-            <a href="{{ '/classes/figure-sculpture/' | relative_url }}">
-                {% include image.html src='images/figuresm.jpg' alt='' width='114' height='114' layout='fixed' %}
-                <h2 class="text-screenreader">Figure Study Classes</h2>
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <td class="content">
-            <a href="{{ '/classes/foundry/' | relative_url }}">
-                {% include image.html src='images/foundrysm.jpg' alt='' width='114' height='114' layout='fixed' %}
-                <h2 class="text-screenreader">Foundry Classes</h2>
-            </a>
-        </td>
-        <td class="content">
-            <a href="{{ '/classes/metal-sculpture/' | relative_url }}">
-                {% include image.html src='images/msculpturesm.jpg' alt='' width='114' height='114' layout='fixed' %}
-                <h2 class="text-screenreader">Metal Sculpture Classes</h2>
-            </a>
-        </td>
-        <td class="content">
-            <a href="{{ '/classes/stone-carving/' | relative_url }}">
-                {% include image.html src='images/stone.jpg' alt='' width='114' height='114' layout='fixed' %}
-                <h2 class="text-screenreader">Stone Carving Classes</h2>
-            </a>
-        </td>
-    </tr>
-</table>
+<div class="grid grid-classes items-stretch">
+
+{% include components/class-card.html link="/classes/foundry/" image="images/foundry-bronze-pour-md.jpg" title="Metal Foundry Studio" %}
+
+{% include components/class-card.html link="/classes/forge/" image="images/forging-md.jpg" title="Forging, Knife and Sword Making" %}
+
+{% include components/class-card.html link="/classes/metal-furniture/" image="images/bench-sm.jpg" title="Metal Furniture Studio" %}
+
+{% include components/class-card.html link="/classes/metal-sculpture/" image="images/welding-md.jpg" title="Metal Sculpture Studio" %}
+
+{% include components/class-card.html link="/classes/figure-study/" image="images/figure-study-md.jpg" title="Figure Study" %}
+
+{% include components/class-card.html link="/classes/stone-carving/" image="images/stone-carving-hammer-chisel-md.jpg" title="Stone Carving" %}
+
+{% include components/class-card.html link="/classes/full-list/" image="images/furnace-md.jpg" title="Full Class List" %}
+
+</div>
