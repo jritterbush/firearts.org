@@ -379,11 +379,11 @@ module.exports = {
   |
   */
 
-  backgroundColors: _.pick(colors,
+  backgroundColors: _.pick(colors, [
     'black',
     'black-light',
     'fac-red',
-  ),
+  ]),
 
 
   /*
