@@ -1,6 +1,7 @@
+{% assign img_src = include.image | relative_url %}
 <a class="block hover:bg-black border-b-0 hover:border-b-0 focus:border-b-0 overflow-hidden rounded shadow-lg" href="{{ include.link }}">
     <div class="h-full">
-        <img class="w-full" src="{{ include.image | relative_url }}" alt="">
+        {% include image.html src=img_src class='w-full' alt='' width='720' height='405' layout='intrinsic' %}
         <div class="px-6 py-4">
             <h3 class="m-0 text-xl">{{ include.title }}</h3>
         </div>
