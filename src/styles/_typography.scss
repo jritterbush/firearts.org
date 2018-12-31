@@ -1,0 +1,51 @@
+/* ******** Typography ********** */
+
+h1,
+h2,
+h3,
+h4 {
+    @apply text-white my-4;
+}
+
+h1 {
+    @apply text-4xl font-semibold;
+}
+
+h2 {
+    @apply text-3xl;
+}
+
+h3 {
+    @apply text-2xl;
+}
+
+h4 {
+    @apply text-xl;
+}
+
+p {
+    @apply text-lg;
+}
+
+li + li {
+    @apply mt-2;
+}
+
+* + p {
+    @apply mt-4;
+}
+
+p strong {
+    @apply text-white;
+}
+
+/* ************* Links ************** */
+
+a {
+    @apply border-b border-dotted border-grey-lighter no-underline pb-sm text-white;
+
+    &:focus,
+    &:hover {
+        @apply border-b border-solid border-fac-orange text-fac-orange;
+    }
+}

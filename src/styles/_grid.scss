@@ -1,0 +1,58 @@
+/* ************** Grid *************** */
+
+.container {
+    max-width: 50rem;
+}
+
+@supports (display: grid) {
+    .grid {
+        display: grid;
+    }
+
+    .grid-classes {
+        grid-auto-rows: minmax(150px, auto);
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    @media screen and (min-width: 769px) {
+        .grid-main {
+            grid-gap: 1em;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        header,
+        footer {
+            grid-column: 1 / span 5;
+        }
+
+        main {
+            grid-column: 2 / span 3;
+        }
+
+        aside {
+            grid-column: 1;
+        }
+
+        .grid-header {
+            align-items: center;
+            grid-template-columns: repeat(4, 1fr);
+
+            & > a {
+                grid-column: 4;
+            }
+
+            & > amp-img {
+                grid-column: 1 / span 3;
+            }
+
+            & > h1 {
+                grid-column: 1 / span 5;
+            }
+        }
+    }
+}
+
+.note {
+    @apply border-b border-dotted border-grey-lighter mb-4 pb-4;
+}
