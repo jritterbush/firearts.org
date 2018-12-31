@@ -52,7 +52,7 @@
       "prettier-stylelint --write",
       "git add"
     ],
-    "*.{js,json,md,html}": [
+    "*.{js,json,yml}": [
       "prettier --write",
       "git add"
     ]
