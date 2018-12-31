@@ -114,7 +114,7 @@ main:
           name: Wish List
     -
       name: Register
-      class: register
+      class: register mt-4
       linkClasses: button button--primary mt1
       url: /register/
 

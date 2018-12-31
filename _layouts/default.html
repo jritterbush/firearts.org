@@ -4,26 +4,16 @@
     {% include head.html %}
 
     <body class="{{page.id}} bg-black-light font-sans text-grey">
-        <div id="top" class="container grid grid-main my-4 mx-auto">
-            {% include gtm.html %}
+        {% include gtm.html %}
+        <div id="top" class="container grid grid-main mx-auto">
             {% include header.html %}
             <aside>
                 {% include navigation.html %}
             </aside>
-            <main id="content">
-                <h1 class="bg-fac-red m-0 py-2 px-4 rounded-sm">
-                    {% if page.category %}
-                        {{ page.category | append: ' | ' }}
-                    {% endif %}
-                    {% if page.title %}
-                        {{ page.title }}
-                    {% else %}
-                        Fire Arts Center of Chicago
-                    {% endif %}
-                </h1>
+            <main id="content" class="px-4 sm:py-4 md:py-4">
                 {{ content }}
             </main>
-            {% include footer.html %}
         </div>
+        {% include footer.html %}
     </body>
 </html>

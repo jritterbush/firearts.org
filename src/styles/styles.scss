@@ -8,9 +8,16 @@
 
 /* ************** Base Styles **************** */
 
+html {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
 body {
-    font-size: 16px;
-    line-height: 1.25;
+    font-size: config('baseTextSize');
+    line-height: 1.3333;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -19,13 +26,6 @@ body {
     box-sizing: border-box;
 }
 
-p + p {
-    margin-top: 1rem;
-}
-
-p strong {
-    color: config('colors.white');
-}
 
 /* ************** Grid *************** */
 
@@ -33,83 +33,110 @@ p strong {
     max-width: 50rem;
 }
 
-.grid {
-    display: grid;
-}
+@supports (display: grid) {
+    .grid {
+        display: grid;
+    }
+    .grid-classes {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-auto-rows: minmax(150px, auto);
+        grid-gap: 1em;
+    }
+    @media screen and (min-width: 769px) {
 
-.grid-main {
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1em;
-}
+        .grid-main {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1em;
+        }
 
-header,
-footer {
-    grid-column: 1 / span 5;
-}
+        header,
+        footer {
+            grid-column: 1 / span 5;
+        }
 
-main {
-    grid-column: 2 / span 3;
-}
+        main {
+            grid-column: 2 / span 3;
+        }
 
-aside {
-    grid-column: 1;
+        aside {
+            grid-column: 1;
+        }
+
+        .grid-header {
+            align-items: center;
+            grid-template-columns: repeat(4, 1fr);
+            & > a {
+                grid-column: 4;
+            }
+            & > amp-img {
+                grid-column: 1 / span 3;
+            }
+            & > h1 {
+                grid-column: 1 / span 5;
+            }
+        }
+    }
 }
 
 .note {
-    @apply border-dotted border-grey-lighter mb-4 pb-4;
+    @apply border-b border-dotted border-grey-lighter mb-4 pb-4;
 }
 
-/* *************Links************** */
+/* ******** Typography ********** */
+
+h1,
+h2,
+h3,
+h4 {
+    @apply text-white my-4;
+}
+
+h1 {
+    @apply text-4xl font-semibold;
+}
+
+h2 {
+    @apply text-3xl;
+}
+
+h3 {
+    @apply text-2xl;
+}
+
+h4 {
+    @apply text-xl;
+}
+
+p {
+    @apply text-lg;
+}
+
+li + li {
+    @apply mt-2;
+}
+
+* + p {
+    @apply mt-4;
+}
+
+p strong {
+    @apply text-white;
+}
+
+/* ************* Links ************** */
 
 a {
-    padding-bottom: 0.125rem;
-
-    text-decoration: none;
-
-    color: config('colors.white');
-    border-bottom: 1px dotted #ededed;
+    @apply border-b border-dotted border-grey-lighter no-underline pb-sm text-white;
+    &:focus,
+    &:hover {
+        @apply border-b border-solid border-fac-orange text-fac-orange;
+    }
 }
 
-a:visited {
-    color: config('colors.white');
-}
+/* ************* Naviation ************** */
 
-a:active {
-    color: config('colors.white');
-}
-
-a:focus,
-a:hover {
-    color: #f90;
-    border-bottom: 1px solid #f90;
-}
-
-.class-categories a {
-    border-bottom: none;
-}
-
-/* Naviation */
-
-.navbar ul {
-    font-weight: 600;
-
-    margin-left: 0;
-    margin-left: 0.5rem;
-    padding-left: 0.5rem;
-
-    list-style: none;
-}
-
-.navbar a:focus {
-    outline: none;
-}
-
-.navbar > ul > li {
-    padding: 0.5rem 0;
-}
-
-.navbar ul ul {
-    display: none;
+.register .navbar .register {
+    @apply hidden;
 }
 
 .home .navbar .home ul,
@@ -131,17 +158,13 @@ a:hover {
 .john-gruber .navbar .gallery ul,
 .kristian .navbar .gallery ul,
 .elisotelo .navbar .gallery ul,
-.lamar .navbar .gallery ul,
 .student .navbar .gallery ul,
 .links .navbar .links ul,
 .facartists .navbar .links ul,
 .chicagoart .navbar .links ul,
 .wishlist .navbar .donate ul,
 .donate .navbar .donate ul {
-    display: block;
-
-    height: auto;
-    padding: 0.5rem 0;
+    @apply block;
 }
 
 .home .navbar .home > a,
@@ -163,7 +186,6 @@ a:hover {
 .john-gruber .navbar .john-gruber > a,
 .kristian .navbar .kristian > a,
 .elisotelo .navbar .elisotelo > a,
-.lamar .navbar .lamar > a,
 .student .navbar .student > a,
 .events .navbar .events > a,
 .links .navbar .links > a,
@@ -172,9 +194,7 @@ a:hover {
 .contact .navbar .contact > a,
 .wishlist .navbar .wishlist > a,
 .donate .navbar .donate > a {
-    cursor: default;
-
-    color: config('colors.white');
+    @apply cursor-default text-white;
 }
 
 .home .navbar .home > a::after,
@@ -196,7 +216,6 @@ a:hover {
 .john-gruber .navbar .john-gruber > a::after,
 .kristian .navbar .kristian > a::after,
 .elisotelo .navbar .elisotelo > a::after,
-.lamar .navbar .lamar > a::after,
 .student .navbar .student > a::after,
 .events .navbar .events > a::after,
 .links .navbar .links > a::after,
@@ -205,82 +224,18 @@ a:hover {
 .contact .navbar .contact > a::after,
 .wishlist .navbar .wishlist > a::after,
 .donate .navbar .donate > a::after {
-    padding-left: 0.25rem;
-
+    @apply pl-1;
     content: '\203A';
-}
-
-.navbar a:not(.button) {
-    text-align: right;
-    text-decoration: none;
-
-    color: #adadad;
 }
 
 .navbar li a:not(.button):hover::after,
 .navbar li a:not(.button):focus::after {
-    padding-left: 0.25rem;
-
+    @apply pl-1;
     content: '\203A';
 }
 
-.navbar ul ul li {
-    font-size: 0.85rem;
-    font-weight: 400;
-    line-height: 2.5;
-}
 
-
-/* ********Fonts, Headers, and Footers********** */
-
-ul {
-    margin-left: 1rem;
-    padding-left: 1rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: normal;
-
-    color: config('colors.white');
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    @apply my-4 mx-0;
-}
-
-h1 {
-    @apply text-3xl;
-}
-
-h2 {
-    @apply text-2xl;
-}
-
-h3 {
-    @apply text-xl;
-}
-
-h4 {
-    @apply text-lg;
-}
-
-/* ************Classes*********** */
-
-.class-categories a {
-    display: block;
-    padding-bottom: 0;
-}
-
-/* ************Special Features*********** */
+/* ************ Additional Utilities *********** */
 
 .columns2 {
     -moz-column-count: 2;
@@ -292,39 +247,25 @@ h4 {
 }
 
 .text-screenreader {
-    position: absolute;
-
-    overflow: hidden;
+    @apply absolute border-0 h-px overflow-hidden -m-px p-0 w-px;
     clip: rect(0 0 0 0);
-
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-
     transition: height 1s;
-
-    border: 0;
 }
+
 #skip:focus {
-    font-size: 0.75rem;
-
-    position: static;
-
-    width: auto;
-    height: auto;
-
-    text-decoration: underline;
+    @apply h-auto static text-xs w-auto;
 }
 
 .button {
-    display: inline-block;
-    padding: .75rem 2rem;
+    @apply border-b-0 font-semibold inline-block px-8 py-3 no-underline;
+    &:focus,
+    &:hover {
+        @apply border-b-0;
+    }
 }
 
 .button--primary {
-    background-color: config('colors.fac-red');
-    color: config('colors.white');
+    @apply bg-fac-red text-white;
     &:focus,
     &:hover {
         background-color: color(config('colors.fac-red') shade(20%));

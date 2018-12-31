@@ -1,21 +1,29 @@
 # firearts.org
 
-> These steps are rough as sandpaper so expect many changes to come soon.
+A static site generator using Jekyll and Gulp to generate HTML from markdown files. CSS is built using TailwindCSS, trimmed down using PurgeCSS, and then inlined into the HTML by Jekyll (called as a child process in the gulp flow).
 
-A site using Jekyll to build to GitHub Pages.
+## Installation and Usage
 
-## Installation
-
-1. Clone repo locally.
+1. Clone the repo locally.
 1. Install dependencies:
-    - `bundle install`
-    - `yarn`
-1. Run `yarn develop` to develop locally.
-
+    - `bundle install` to install Ruby dependencies from Gemfile
+    - `yarn` to install npm packages
+1. Run `yarn develop` to start up a development server with Browsersync that watches changes to various files.
+1. Run `yarn build` for a production build.
 
 ## Deploy
 
-Steps to come...but basically just get this on the `master` branch and let
-GitHub work it's magic.
+For now this is still hosted on a garbage hosting plan so the steps for now are:
 
+1. `yarn build` to build the site files
+1. FTP up the HTML and images.
+1. To change the sitemap you need to manually edit the `static/sitemap.xml`. I need to find a better tool to automate that.
+1. The `static/.htaccess` file should match what is on the current garabage host so modifying that and uploading should fix redirect issues.
 
+With that said, in parallel with this there is a Github/Netlify build that is triggered by a PR to the upstream repo. Once opened test builds are kicked off in Netlify which can be previewed. If good you can merge branches through `staging` and then to `master` which will build the site there too. Eventually this will be the flow.
+
+## To Dos
+
+- Fix sitemap automation in build.
+- Investigate headless CMS options (Netlify CMS in particular) to managed the content a litte easier.
+- Cut Jekyll and use something more barebones and easier to configure with styles outside of the HTML build.

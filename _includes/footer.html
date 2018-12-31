@@ -1,10 +1,35 @@
 {% assign org = site.organization %}
-<footer class="footer">
-    <p>
-        {{ org.name }} | {{ org.address }} | {{ org.city }}, {{ org.state }} {{org.zip}}<br />
-        {% for phone in org.phones %}
-        Tel: {{ phone }} |
-        {% endfor %} | Email: <a href="mailto:{{ org.email }}">{{ org.email }}</a><br>
-        <a href="{{ '/sitemap/' | relative_url }}">Sitemap</a>
-    </p>
+<footer class="bg-black border-grey-darkest border-t mt-12 py-8 px-4">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap justify-between">
+            <div class="w-1/2 md:w-1/4">
+                <h3><a href="/">Home</a></h3>
+                {% include nav-focused.html class="list-reset mt-4" subnavClass="home" %}
+            </div>
+            <div class="w-1/2 md:w-1/4">
+                <h3><a href="/classes/">Classes</a></h3>
+                {% include nav-focused.html class="list-reset mt-4" subnavClass="classes" %}
+            </div>
+            <div class="w-1/2 md:w-1/4">
+                <h3><a href="/galleries/">Gallery</a></h3>
+                {% include nav-focused.html class="list-reset mt-4" subnavClass="gallery" %}
+            </div>
+            <div class="w-1/2 md:w-1/4">
+                <h3>Other Links</h3>
+                <ul class="list-reset">
+                    <li><a href="/events/">Events</a></li>
+                    <li><a href="/contact-us/">Contact Us</a></li>
+                    <li><a href="/donate/">Donate</a></li>
+                    <li><a href="/register/">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-sm border-grey-darkest border-t mt-8 pt-4 w-full">
+            {{ org.name }} | {{ org.address }} | {{ org.city }}, {{ org.state }} {{org.zip}}<br />
+            {% for phone in org.phones %}
+            Tel: {{ phone }} |
+            {% endfor %} | Email: <a href="mailto:{{ org.email }}">{{ org.email }}</a><br>
+            <a href="{{ '/sitemap/' | relative_url }}">Sitemap</a>
+        </p>
+    </div>
 </footer>

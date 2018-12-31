@@ -48,8 +48,9 @@ let colors = {
   'transparent': 'transparent',
 
   'fac-red': '#990000',
+  'fac-orange': '#ff9900',
 
-  'blackest': '#000000',
+  'black': '#000000',
   'black-light': '#222222',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
@@ -255,6 +256,8 @@ module.exports = {
   |
   */
 
+  baseTextSize: '16px',
+
   textSizes: {
     'xs': '.75rem',     // 12px
     'sm': '.875rem',    // 14px
@@ -355,6 +358,8 @@ module.exports = {
     'black',
     'grey-darker',
     'grey-dark',
+    'grey',
+    'fac-orange',
     'fac-red',
     'white',
   ]),
@@ -375,6 +380,7 @@ module.exports = {
   */
 
   backgroundColors: _.pick(colors,
+    'black',
     'black-light',
     'fac-red',
   ),
@@ -632,6 +638,11 @@ module.exports = {
     '3xl': '80rem',
     '4xl': '90rem',
     '5xl': '100rem',
+    '1/4': '25%',
+    '1/3': '33.3333%',
+    '1/2': '50%',
+    '2/3': '66.6666%',
+    '3/4': '75%',
     'full': '100%',
   },
 
@@ -676,6 +687,7 @@ module.exports = {
   padding: {
     'px': '1px',
     '0': '0',
+    'sm' : '0.125rem',
     '1': '0.25rem',
     '2': '0.5rem',
     '3': '0.75rem',
@@ -712,6 +724,7 @@ module.exports = {
     'auto': 'auto',
     'px': '1px',
     '0': '0',
+    'sm' : '0.125rem',
     '1': '0.25rem',
     '2': '0.5rem',
     '3': '0.75rem',
@@ -909,7 +922,7 @@ module.exports = {
     borderColors: ['responsive', 'hover', 'focus'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
-    borderWidths: ['responsive'],
+    borderWidths: ['responsive', 'hover', 'focus'],
     cursor: ['responsive'],
     display: ['responsive'],
     flexbox: ['responsive'],
