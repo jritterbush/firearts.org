@@ -1,0 +1,18 @@
+{%- assign scheduler = site.data.schedule -%}
+{%- assign pieces = include.time | split: "-" -%}
+{%- assign dow = pieces[0] -%}
+{%- assign times = pieces[1] -%}
+<span class="day-{{ dow }}">
+{{ scheduler.days[dow] | prepend: "- " | append: " at " }}
+{%- if times contains '+' -%}
+    {%- assign more_times = times | split: "+" -%}
+    {%- for one_time in more_times -%}
+        {%- if forloop.last == true -%}
+            {{ " and " }}
+        {%- endif -%}
+        {{ scheduler.times[one_time] }}
+    {%- endfor -%}
+{%- else -%}
+    {{ scheduler.times[times] }}
+{%- endif -%}
+</span><br>

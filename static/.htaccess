@@ -30,7 +30,8 @@ Redirect 301 /kids.html                  /classes/
 Redirect 301 /foundry.html               /classes/foundry/
 Redirect 301 /furniture.html             /classes/metal-furniture/
 Redirect 301 /msculpture.html            /classes/metal-sculpture/
-Redirect 301 /stone.html                 /classes/stone-carving/
+Redirect 301 /stone.html                 /classes/
+Redirect 301 /classes/stone-carving/     /classes/
 Redirect 301 /mold.html                  /classes/foundry/
 Redirect 301 /figure.html                /classes/figure-study/
 Redirect 301 /fulllist.html              /classes/full-list/

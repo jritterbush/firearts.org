@@ -1,9 +1,9 @@
 bronze1:
-  title: "Bronze Casting &amp; Mold Making"
+  title: Bronze Casting and Mold Making
   instructors: Michael Bennett
   schedule:
-    - "Wednesdays 7:00pm&ndash;10:00pm"
-    - "Saturdays 3:00&ndash;6:00pm"
+    - we-19
+    - sa-15
   image:
     url: found1.jpg
     class: float-left mb-4 mr-4
@@ -17,13 +17,13 @@ furniture1:
   title: Metal Furniture Studio
   instructors: Michael Bennett
   schedule:
-    - Wednesday 10:00am&ndash;1:00pm &amp; 7:00pm&ndash;10:00pm
-    - Saturday 3:00pm&ndash;6:00pm
+    - we-10+19
+    - sa-12
   description:
     - Students will learn how to design and create basic table top furnishings in metal using basic techniques of metal fabrication and brazing.
     - Repetition of this class will provide more advanced metal-working lessons.
 msculpture1:
-  title: Beginning Metal Sculpture
+  title: Metal Sculpture Studio
   image:
     url: ms.jpg
     class: float-right mb-4 ml-4
@@ -31,35 +31,19 @@ msculpture1:
     width: 140
     height: 171
   schedule:
-    - Wednesday 10:00am&ndash;1:00pm &amp; 7:00pm&ndash;10:00pm
+    - we-10+19
+    - sa-12
   description:
     - This class focuses on how to work sculptural concepts from the drawing board to the scale model stage of construction. Students will be expected to keep a sketchbook of ideas which will be critiqued and refined at each class session. Students will learn basic metal fabrication technique.
-msculpture2:
-  title: Advanced Metal Sculpture
-  schedule:
-    - Wednesday 10:00am&ndash;1:00pm &amp; 7:00pm&ndash;10:00pm
-  description:
-    - This class deals with fabrication of large scale metal sculpture from models or free-form. As with Beginning Metal Sculpture, students will be expected to keep a sketchbook of ideas which will be critiqued and refined at each class session. Students will learn advanced metal fabrication technique, gas forging, Acetylene welding, and gas and arc welding techniques as well as brazing and chasing techniques.
-stone1:
-  title: Beginning Stone Carving Workshop
-  schedule:
-    - Saturday 3-6pm
-  description:
-    - In beginning stone carving students will learn the basic techniques for composing and carving small sculpture out of alabaster and other soft stones. Students will need to purchase carving tools and materials. (This class is not for students with back problems or arthritis.)
-stone2:
-  title: Intermediate Stone Carving Workshop
-  schedule:
-    - Saturday 3-6pm
-  description:
-    - In intermediate stone carving students will learn how to work with medium hardness stones like sandstones and lime stones. Students can carve small sculpture projects in a stone of medium hardness or can learn to carve larger project in soft stones. (This class is not for students with back problems or arthritis.)
+    - Repetition of this class extends to deal with fabrication of large scale metal sculpture from models or free-form. Students will learn advanced metal fabrication technique, gas forging, acetylene welding, and gas and arc welding techniques as well as brazing and chasing techniques.
 forge1:
-  title: Knife and Sword Making
+  title: Forging, Knife and Sword Making
   instructors: Michael Bennett &amp; Chris Mayor
   schedule:
-    - Monday 7:00pm&ndash;10:00pm
-    - Tuesday 7:00pm&ndash;10:00pm
-    - Wednesday 10:00am&ndash;1:00pm &amp; 7:00pm&ndash;10:00pm
-    - Saturday 3:00pm&ndash;6:00pm
+    - mo-19
+    - we-10+19
+    - sa-12+15
+    - su-12
   description:
     - Learn the sacred craft of forging functional blades out of steel. In this class students will learn how to design and forge knives and swords as well as designing and making ornate hilts and scabbards. Skills learned in this class include forging technique, tempering, gas and coke forge operations, and surfacing techniques.
 figure1:
@@ -71,8 +55,7 @@ figure1:
     width: 200
     height: 172
   schedule:
-    - Saturday 10:00am&ndash;1:00pm
-    - Monday 6:30pm&ndash;9:30pm
+    - su-10
   fee: $200 for 8 weeks
   description:
     - In this multi-level class students will learn to master the classical figure sculpture technique from a live model. We will cover the use of clay tools, clay body chemistry, basic armature construction, anatomy, and clay hollowing and firing technique.
