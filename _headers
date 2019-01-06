@@ -1,5 +1,8 @@
+# Netlify headers
+# A list of headers to return with the responses on pages
+# https://www.netlify.com/docs/headers-and-basic-auth/
+
 /*
-    Basic-Auth: david:bowie
     Strict-Transport-Security: max-age=63072000
     Content-Security-Policy: frame-ancestors 'self'
     X-Frame-Options: DENY
