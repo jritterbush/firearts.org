@@ -4,11 +4,11 @@ h1,
 h2,
 h3,
 h4 {
-    @apply text-white my-4;
+    @apply font-raleway font-black text-white my-4;
 }
 
 h1 {
-    @apply text-4xl font-semibold;
+    @apply text-4xl;
 }
 
 h2 {
@@ -16,11 +16,11 @@ h2 {
 }
 
 h3 {
-    @apply text-2xl;
+    @apply text-2xl font-bold;
 }
 
 h4 {
-    @apply text-xl;
+    @apply text-xl font-bold;
 }
 
 p {
