@@ -31,6 +31,9 @@ main:
       - name: Figure Study
         class: figure
         url: /classes/figure-study/
+      - name: Stone
+        class: stone
+        url: /classes/stone-carving/
       - name: Full Class List
         class: full-list
         url: /classes/full-list/
