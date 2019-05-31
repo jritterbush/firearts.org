@@ -2,6 +2,8 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} !^www.firearts.org [NC]
 RewriteRule ^(.*)$ http://www.firearts.org/$1 [L,R=301]
 
+ErrorDocument 404 /404.html
+
 Redirect 301 /about              /about-us/
 Redirect 301 /aboutus.html       /about-us/
 Redirect 301 /location.html      /location/
@@ -12,6 +14,8 @@ Redirect 301 /contact.html       /contact-us/
 Redirect 301 /contactus.html     /contact-us/
 Redirect 301 /donate.html        /donate/
 Redirect 301 /wishlist.html      /donate/wishlist/
+Redirect 301 /sitemap.html       /sitemap/
+
 
 Redirect 301 /links.html         /links/
 Redirect 301 /facartists.html    /links/fire-arts-artists/

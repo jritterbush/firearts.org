@@ -1,3 +1,7 @@
+# Netlify Redirect file
+# List of pages to create 301 redirects
+# https://www.netlify.com/docs/redirects/
+
 # General Pages
 /about              /about-us/
 /aboutus.html       /about-us/
@@ -9,6 +13,7 @@
 /contactus.html     /contact-us/
 /donate.html        /donate/
 /wishlist.html      /donate/wishlist/
+/sitemap.html       /sitemap/
 
 #Links
 /links.html         /links/
