@@ -1,6 +1,6 @@
 {% assign org = site.organization %}
-<footer class="bg-black border-grey-darkest border-t mt-12 py-8 px-4">
-    <div class="container mx-auto">
+<footer class="bg-black border-grey-darkest border-t mt-12 overflow-y-hidden py-8 px-4">
+    <div class="container mx-auto z-10">
         <div class="flex flex-wrap justify-between">
             <div class="w-1/2 md:w-1/4">
                 <h3><a href="/">Home</a></h3>
@@ -31,5 +31,8 @@
             {% endfor %} | Email: <a href="mailto:{{ org.email }}">{{ org.email }}</a><br>
             <a href="{{ '/sitemap/' | relative_url }}">Sitemap</a>
         </p>
+    </div>
+    <div class="absolute h-auto opacity-25 pin-r pin-b max-w-sm w-full z-0">
+        {% include fac-flare.svg %}
     </div>
 </footer>

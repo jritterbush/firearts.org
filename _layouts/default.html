@@ -3,12 +3,22 @@
     {% include head.html %}
     <body class="{{page.id}} bg-black-light font-sans text-grey">
         {% include gtm.html %}
+        {% include header.html %}
         <div id="top" class="container grid grid-main mx-auto">
-            {% include header.html %}
             <aside>
                 {% include navigation.html %}
             </aside>
-            <main id="content" class="px-4 sm:py-4 md:py-4">
+            <main id="content" class="p-4">
+                <h1 class="mt-0">
+                    {% if page.category %}
+                        {{ page.category | append: ' | ' }}
+                    {% endif %}
+                    {% if page.title %}
+                        {{ page.title }}
+                    {% else %}
+                        Fire Arts Center of Chicago
+                    {% endif %}
+                </h1>
                 {{ content }}
             </main>
         </div>

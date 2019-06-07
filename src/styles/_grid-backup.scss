@@ -33,6 +33,23 @@
         aside {
             grid-column: 1;
         }
+
+        .grid-header {
+            align-items: center;
+            grid-template-columns: repeat(4, 1fr);
+
+            & > a {
+                grid-column: 4;
+            }
+
+            & > amp-img {
+                grid-column: 1 / span 3;
+            }
+
+            & > h1 {
+                grid-column: 1 / span 5;
+            }
+        }
     }
 }
 

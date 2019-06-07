@@ -3,6 +3,7 @@
 const bs = require("browser-sync").create();
 const child = require("child_process");
 const gulp = require("gulp");
+const gulpIf = require("gulp-if");
 const gutil = require("gulp-util");
 const postcss = require("gulp-postcss");
 const pcClean = require("postcss-clean");
@@ -43,20 +44,23 @@ gulp.task("styles", () => {
       ])
     )
     .pipe(
-      purgecss({
-        content: [
-          "_includes/**/*.html",
-          "_layouts/**/*.html",
-          "content/**/*.html",
-          "_data/**/*.yml"
-        ],
-        extractors: [
-          {
-            extractor: TailwindExtractor,
-            extensions: ["html", "js", "yml"]
-          }
-        ]
-      })
+      gulpIf(
+        !devBuild,
+        purgecss({
+          content: [
+            "_includes/**/*.html",
+            "_layouts/**/*.html",
+            "content/**/*.html",
+            "_data/**/*.yml"
+          ],
+          extractors: [
+            {
+              extractor: TailwindExtractor,
+              extensions: ["html", "js", "yml"]
+            }
+          ]
+        })
+      )
     )
     .pipe(rename("styles.css"))
     .pipe(gulp.dest(cssTemp));
