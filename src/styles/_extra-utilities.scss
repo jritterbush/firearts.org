@@ -41,3 +41,7 @@
         color: config('colors.white');
     }
 }
+
+amp-img.object-cover img {
+    @apply object-cover;
+}
