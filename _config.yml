@@ -59,8 +59,6 @@ organization:
   city: Chicago
   state: IL
   zip: 60639
-  phones:
-    - 773.544.9908
-    - 312.842.2027
+  phone: 773.544.9908
   email: info@firearts.org
   founded: 1997-04-04
