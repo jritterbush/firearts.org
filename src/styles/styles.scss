@@ -1,8 +1,8 @@
-@import 'tailwindcss/preflight';
+@import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import './_base.scss';
-@import './_grid.scss';
-@import './_typography.scss';
-@import './_navigation.scss';
-@import './_extra-utilities.scss';
+@import url('./_base.scss');
+@import url('./_grid.scss');
+@import url('./_typography.scss');
+@import url('./_navigation.scss');
+@import url('./_extra-utilities.scss');

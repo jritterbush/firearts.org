@@ -4,17 +4,17 @@ title: Membership & Registration
 permalink: /membership/
 id: membership
 ---
-
+{% assign org = site.organization %}
 <p>Figure sculpture and figure drawing classes are on a 16-week semester structure and are pro-rated. All other classes are on-going so you can sign up at any time.</p>
 <p>Figure classes are $285.00 for 16 weeks. Bronze casting is $385. All other classes are $385.00 for 16 weeks. (See our <a href="{{ '/classes/' | relative_url }}">class listing page</a> for more details about specific class prices.)</p>
 <p>Want to sign up for classes at the Fire Arts Center of Chicago? Click the link below for a printable registration form:</p>
 <p class="ml-4"><a href="{{ '/downloads/FireArts_RegistrationForm.pdf' | relative_url }}">Click Here for Class Registration Form!</a></p>
 <p>Just print it out and mail it along with a $50 deposit check to:</p>
 <p class="margin-left-1">
-    The Fire Arts Center of Chicago<br />
-    1830 N Kostner<br/>
-    Chicago, IL 60639
+    {{ org.name }}<br>
+    {{ org.address }}<br>
+    {{ org.city }}, {{ org.state }} {{ org.zip }}
 </p>
 <p>You can also stop by on a class night or call us at:</p>
-<p class="margin-left-1">773.544.9908 or 312.842.2027</p>
+<p class="margin-left-1">{{org.phone}}</p>
 <p>We hope to add a form which will allow you to sign up for membership or register for classes online with less hassle and none of the paperwork.</p>
