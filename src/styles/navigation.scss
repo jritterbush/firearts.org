@@ -4,6 +4,7 @@
     @apply hidden;
 }
 
+/* stylelint-disable selector-max-compound-selectors */
 .home .navbar .home ul,
 .about .navbar .home ul,
 .location .navbar .home ul,
@@ -100,3 +101,4 @@
 
     content: '\203A';
 }
+/* stylelint-enable selector-max-compound-selectors */

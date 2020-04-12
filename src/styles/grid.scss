@@ -38,15 +38,15 @@
             align-items: center;
             grid-template-columns: repeat(4, 1fr);
 
-            & > a {
+            > a {
                 grid-column: 4;
             }
 
-            & > amp-img {
+            > amp-img {  /* stylelint-disable-line selector-type-no-unknown */
                 grid-column: 1 / span 3;
             }
 
-            & > h1 {
+            > h1 {
                 grid-column: 1 / span 5;
             }
         }

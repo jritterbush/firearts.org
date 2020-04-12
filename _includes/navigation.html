@@ -1,13 +1,13 @@
 {% assign menu = site.data.navigation.main %}
 {% if menu %}
 <nav class="navbar hidden md:block">
-    <ul class="font-raleway font-bold list-reset pl-4">
+    <ul class="font-raleway font-bold list-none p-0 pl-4">
         {% for p in menu %}
             {% unless p.hidden %}
                 <li class="{{ p.class }} mt-4">
                     <a class="{{ p.linkClasses }} border-b-0 hover:border-b-0 focus:border-b-0" href="{{ p.url | relative_url }}">{{ p.name }}</a>
                 {% if p.subpages %}
-                    <ul class="font-sans font-normal hidden list-reset pl-4 text-sm">
+                    <ul class="font-sans font-normal hidden list-none p-0 pl-4 text-sm">
                     {% for sp in p.subpages %}
                         {% unless sp.hidden %}
                         <li class="{{ sp.class }} mt-4"><a class="border-b-0 hover:border-b-0 focus:border-b-0" href="{{ sp.url | relative_url }}">{{ sp.name }}</a>

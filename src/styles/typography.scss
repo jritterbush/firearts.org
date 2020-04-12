@@ -27,6 +27,16 @@ p {
     @apply text-lg;
 }
 
+ul {
+    list-style-type: disc;
+    padding-left: theme('padding.4');
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: theme('padding.4');
+}
+
 li + li {
     @apply mt-2;
 }

@@ -1,13 +1,11 @@
 /* ************** Base Styles **************** */
 
 html {
-    -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
 }
 
 body {
-    font-size: config('baseTextSize');
     line-height: 1.3333;
     scroll-behavior: smooth;
 }
