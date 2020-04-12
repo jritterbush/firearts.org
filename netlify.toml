@@ -1,6 +1,6 @@
 [build]
     command = "yarn build"
-    RUBY_VERSION = "2.6.3"
+    RUBY_VERSION = "2.6.2"
 
 [context.staging]
     command = "yarn build:staging"
