@@ -16,11 +16,11 @@
 title: Fire Arts Center of Chicago
 email: info@firearts.org
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://firearts.org" # the base hostname & protocol for your site, e.g. http://example.com
+    Write an awesome description for your new site here. You can edit this
+    line in _config.yml. It will appear in your document head meta (for
+    Google search results) and in your feed.xml site description.
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'http://firearts.org' # the base hostname & protocol for your site, e.g. http://example.com
 timezone: America/Chicago
 # twitter_username: jekyllrb
 # github_username: FireArtsCenter
@@ -28,37 +28,37 @@ timezone: America/Chicago
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-sitemap
+    - jekyll-sitemap
 include:
-  - _redirects
-  - _headers
+    - _redirects
+    - _headers
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
 exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - package.json
-  - yarn.lock
-  - gulp/
-  - gulpfile.js
-  - static/
-  - netlify.toml
-  - tailwind.config.js
-  - src/
+    - README.md
+    - Gemfile
+    - Gemfile.lock
+    - node_modules
+    - package.json
+    - yarn.lock
+    - gulp/
+    - gulpfile.js
+    - static/
+    - netlify.toml
+    - tailwind.config.js
+    - src/
 
 gtm_id: GTM-5BNZSL
 
 organization:
-  name: Fire Arts Center of Chicago
-  address: 1830 N Kostner
-  city: Chicago
-  state: IL
-  zip: 60639
-  phone: 773.544.9908
-  email: info@firearts.org
-  founded: 1997-04-04
+    name: Fire Arts Center of Chicago
+    address: 1830 N Kostner
+    city: Chicago
+    state: IL
+    zip: 60639
+    phone: 773.544.9908
+    email: facc44@juno.com
+    founded: 1997-04-04
