@@ -36,7 +36,6 @@
         "postcss-nested": "^4.2.1",
         "prettier": "2.0.4",
         "stylelint": "^13.3.2",
-        "stylelint-config-idiomatic-order": "^8.1.0",
         "stylelint-config-sass-guidelines": "^7.0.0",
         "stylelint-config-standard": "^20.0.0",
         "tailwindcss": "^1.2.0"

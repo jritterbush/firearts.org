@@ -1,9 +1,8 @@
 module.exports = {
-    extends: ['stylelint-config-standard', 'stylelint-config-sass-guidelines', 'stylelint-config-idiomatic-order'],
+    extends: ['stylelint-config-standard', 'stylelint-config-sass-guidelines'],
     rules: {
         indentation: 4,
         'string-quotes': 'single',
-        'selector-type-no-unknown': ['/^amp-/'],
         'at-rule-no-unknown': [
             true,
             {
