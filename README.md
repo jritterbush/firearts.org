@@ -1,6 +1,6 @@
 # firearts.org
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/36c81cca-18f3-433f-9db0-c02921d893d4/deploy-status)](https://app.netlify.com/sites/firearts/deploys) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 A static site generator using Jekyll and Gulp to generate HTML from markdown files. CSS is built using TailwindCSS, trimmed down using PurgeCSS, and then inlined into the HTML by Jekyll (called as a child process in the gulp flow).
 
