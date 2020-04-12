@@ -26,7 +26,7 @@
         </div>
         <p class="text-sm border-grey-darkest border-t mt-8 pt-4 w-full">
             {{ org.name }} | {{ org.address }} | {{ org.city }}, {{ org.state }} {{org.zip}}<br />
-            Tel: {{ org.phone }} | {% comment %}Email: <a href="mailto:{{ org.email }}">{{ org.email }}</a> | {% endcomment %}<a href="{{ '/sitemap/' | relative_url }}">Sitemap</a>
+            Tel: {{ org.phone }} | Email: <a href="mailto:{{ org.email }}">{{ org.email }}</a> | <a href="{{ '/sitemap/' | relative_url }}">Sitemap</a>
         </p>
     </div>
 </footer>
