@@ -56,3 +56,6 @@
 /bouba.html             /galleries/
 /lamar.html             /galleries/
 /student.html           /galleries/student-work/
+
+# More Random Redirects
+/home/about/ /about/
