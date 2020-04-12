@@ -8,19 +8,11 @@ A static site generator using Jekyll and Gulp to generate HTML from markdown fil
 
 1. Clone the repo locally.
 1. Install dependencies:
-   - `bundle install` to install Ruby dependencies from Gemfile
-   - `yarn` to install npm packages
-1. Run `yarn develop` to start up a development server with Browsersync that watches changes to various files.
+    - `yarn start` to run `bundle install` and `yarn`
+1. Run `yarn develop` to start up a development server.
 1. Run `yarn build` for a production build.
 
 ## Deploy
-
-For now this is still hosted on a garbage hosting plan so the steps for now are:
-
-1. `yarn build` to build the site files
-1. FTP up the HTML and images.
-1. To change the sitemap you need to manually edit the `static/sitemap.xml`. I need to find a better tool to automate that.
-1. The `static/.htaccess` file should match what is on the current garabage host so modifying that and uploading should fix redirect issues.
 
 With that said, in parallel with this there is a Github/Netlify build that is triggered by a PR to the upstream repo. Once opened test builds are kicked off in Netlify which can be previewed. If good you can merge branches through `staging` and then to `master` which will build the site there too. Eventually this will be the flow.
 
